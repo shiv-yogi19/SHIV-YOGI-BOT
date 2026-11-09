@@ -3,7 +3,7 @@
 [![Telegram Bot](https://img.shields.io/badge/Telegram-@ShivYogi19__bot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/ShivYogi19_bot)
 [![AI Engine](https://img.shields.io/badge/AI_Engine-Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 [![Serverless](https://img.shields.io/badge/Edge_Runtime-Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
-[![Languages](https://img.shields.io/badge/Languages-English_%7C_हिन्दी-10B981?style=for-the-badge)](https://github.com/SHIV-YOGI-BOT/SHIV-YOGI-BOT)
+[![Languages](https://img.shields.io/badge/Languages-English_%7C_हिन्दी-10B981?style=for-the-badge)](https://github.com/shiv-yogi19/SHIV-YOGI-BOT)
 [![JSON Validated](https://img.shields.io/badge/JSON-100%25_Valid-success?style=for-the-badge)](https://github.com/SHIV-YOGI-BOT/SHIV-YOGI-BOT)
 
 Welcome to the official repository content for **SHIV YOGI BOT**, an intelligent, bilingual conversational AI chatbot on Telegram conceived and built by **Shiv Yogi**. Powered by the **Google Gemini Large Language Model (API)** and deployed at the edge with **Cloudflare Workers**, SHIV YOGI BOT delivers rapid, contextual answers in both English and pure Devanagari Hindi.
