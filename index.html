@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d16">
+<meta name="description" content="SHIV YOGI BOT - bilingual Telegram AI assistant project by Shiv Yogi.">
+<title>SHIV YOGI BOT | Created by Shiv Yogi</title>
+<style>
+:root{color-scheme:dark;--bg:#080c14;--panel:rgba(20,29,46,.78);--line:rgba(255,255,255,.11);--text:#edf3ff;--muted:#a8b4c9;--blue:#78aaff;--cyan:#72e2e4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#18345b 0,transparent 42%),radial-gradient(ellipse at 90% 30%,#17294a 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,11,19,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:850;letter-spacing:.08em}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.12em}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}.switch{display:flex;gap:6px}.switch button,.btn{border:1px solid var(--line);background:#17243a;color:var(--text);padding:9px 13px;border-radius:12px;cursor:pointer}.switch button.active,.btn.primary{background:linear-gradient(120deg,#315fa8,#237f91);border-color:transparent}
+.hero{padding:88px 0 62px;text-align:center}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(36px,7vw,70px);line-height:1.05;margin:16px 0}.hero p{max-width:760px;margin:0 auto 24px;color:var(--muted);font-size:18px}
+.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.section{padding:34px 0 54px}.section h2{font-size:clamp(25px,4vw,36px);margin:0 0 8px}.lead{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 15px 45px #0003;backdrop-filter:blur(14px)}.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--cyan);font-size:12px}
+.command{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}code{color:#b9d6ff;background:#111d30;padding:4px 7px;border-radius:7px}.notice{border-left:3px solid var(--cyan);padding:12px 16px;background:#102333;border-radius:0 12px 12px 0;color:var(--muted)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 17px;margin:10px 0}summary{cursor:pointer;font-weight:700}details p{color:var(--muted);margin-bottom:0}
+footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:13px}
+.lang-hi{display:none}html[data-lang="hi"] .lang-en{display:none}html[data-lang="hi"] .lang-hi{display:initial}
+@media(max-width:760px){.nav{padding:12px 0;align-items:flex-start;flex-wrap:wrap}nav{order:3;width:100%;gap:12px}.grid{grid-template-columns:1fr}.hero{padding:60px 0 42px}.command{grid-template-columns:105px 1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<div class="brand">SHIV YOGI BOT<small>CREATED BY SHIV YOGI</small></div>
+<nav><a href="#about">About</a><a href="#features">Features</a><a href="#commands">Commands</a><a href="#terms">Terms</a><a href="#privacy">Privacy</a></nav>
+<div class="switch"><button id="en" class="active" onclick="setLang('en')">EN</button><button id="hi" onclick="setLang('hi')">हिन्दी</button></div>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Independent Telegram AI Project</div>
+<h1>SHIV YOGI BOT</h1>
+<p class="lang-en">A bilingual Telegram assistant project for learning, exploring ideas, and asking everyday questions in English or Hindi.</p>
+<p class="lang-hi">सीखने, नई जानकारी खोजने और रोज़मर्रा के प्रश्न पूछने के लिए एक द्विभाषी टेलीग्राम सहायक प्रोजेक्ट।</p>
+<div class="actions"><a class="btn primary" href="https://t.me/ShivYogi19_bot" target="_blank" rel="noopener">Open Telegram Bot</a><a class="btn" href="https://github.com/shiv-yogi19/SHIV-YOGI-BOT" target="_blank" rel="noopener">GitHub Repository</a></div>
+</div></section>
+<section class="section" id="about"><div class="wrap">
+<h2 class="lang-en">About the project</h2><h2 class="lang-hi">प्रोजेक्ट परिचय</h2>
+<p class="lead lang-en">Created by Shiv Yogi. The intended stack combines Telegram Bot API, Cloudflare Workers, GitHub-hosted JSON content, Cloudflare KV, and Google Gemini API.</p>
+<p class="lead lang-hi">शिव योगी द्वारा निर्मित। इसकी निर्धारित तकनीकी संरचना Telegram Bot API, Cloudflare Workers, GitHub JSON, Cloudflare KV और Google Gemini API को जोड़ती है।</p>
+<div class="notice lang-en">Documentation describes intended behavior. A feature should be considered active only after it is implemented and tested in the deployed Worker.</div>
+<div class="notice lang-hi">दस्तावेज़ अपेक्षित व्यवहार बताते हैं। किसी सुविधा को सक्रिय तभी मानें जब वह तैनात Worker में लागू और परीक्षण की जा चुकी हो।</div>
+</div></section>
+<section class="section" id="features"><div class="wrap"><h2 class="lang-en">Project features</h2><h2 class="lang-hi">प्रोजेक्ट की सुविधाएँ</h2><p class="lead lang-en">Availability depends on backend implementation and third-party services.</p><p class="lead lang-hi">सुविधाओं की उपलब्धता Backend Implementation और तृतीय-पक्ष सेवाओं पर निर्भर है।</p>
+<div class="grid">
+<article class="card"><span class="pill">01</span><h3 class="lang-en">Bilingual experience</h3><h3 class="lang-hi">द्विभाषी अनुभव</h3><p class="lang-en">English and Hindi interface text with a language selector.</p><p class="lang-hi">भाषा चयन के साथ अंग्रेज़ी और हिन्दी संदेश।</p></article>
+<article class="card"><span class="pill">02</span><h3 class="lang-en">Direct Q&A</h3><h3 class="lang-hi">सीधे प्रश्न-उत्तर</h3><p class="lang-en">Normal text questions can be sent without slash commands when AI is enabled.</p><p class="lang-hi">AI चालू होने पर बिना Slash Command सामान्य प्रश्न भेजे जा सकते हैं।</p></article>
+<article class="card"><span class="pill">03</span><h3>Gemini API</h3><p class="lang-en">Google Gemini API integration, subject to model access and quotas.</p><p class="lang-hi">Google Gemini API एकीकरण, जो मॉडल एक्सेस और कोटा पर निर्भर है।</p></article>
+<article class="card"><span class="pill">04</span><h3>GitHub JSON</h3><p class="lang-en">Public project information and bilingual content are maintained in repository files.</p><p class="lang-hi">सार्वजनिक परियोजना जानकारी और द्विभाषी सामग्री रिपॉजिटरी फाइलों में रखी जाती है।</p></article>
+<article class="card"><span class="pill">05</span><h3>Cloudflare Workers</h3><p class="lang-en">Serverless webhook backend, subject to deployment and platform limits.</p><p class="lang-hi">Serverless Webhook Backend, जो Deployment और Platform Limits पर निर्भर है।</p></article>
+<article class="card"><span class="pill">06</span><h3 class="lang-en">Admin protection</h3><h3 class="lang-hi">एडमिन सुरक्षा</h3><p class="lang-en">Admin actions must verify the numeric Telegram user ID on the server.</p><p class="lang-hi">एडमिन कार्यों में Server पर Numeric Telegram User ID सत्यापित होना चाहिए।</p></article>
+</div></div></section>
+<section class="section" id="commands"><div class="wrap"><h2 class="lang-en">Command reference</h2><h2 class="lang-hi">कमांड सूची</h2><p class="lead lang-en">The command catalog is documentation; Worker handlers are required for execution.</p><p class="lead lang-hi">कमांड सूची केवल दस्तावेज़ है; उन्हें चलाने के लिए Worker Handlers आवश्यक हैं।</p>
+<div class="card">
+<div class="command"><code>/start</code><span class="lang-en">Start the bot and choose a language.</span><span class="lang-hi">बॉट शुरू करें और भाषा चुनें।</span></div>
+<div class="command"><code>/help</code><span class="lang-en">Show usage guidance.</span><span class="lang-hi">उपयोग संबंधी सहायता दिखाएँ।</span></div>
+<div class="command"><code>/about</code><span class="lang-en">Read about the project.</span><span class="lang-hi">प्रोजेक्ट की जानकारी पढ़ें।</span></div>
+<div class="command"><code>/creator</code><span class="lang-en">Show creator information.</span><span class="lang-hi">निर्माता की जानकारी दिखाएँ।</span></div>
+<div class="command"><code>/features</code><span class="lang-en">Show documented features.</span><span class="lang-hi">दर्ज सुविधाएँ दिखाएँ।</span></div>
+<div class="command"><code>/terms</code><span class="lang-en">Read terms and conditions.</span><span class="lang-hi">नियम एवं शर्तें पढ़ें।</span></div>
+<div class="command"><code>/privacy</code><span class="lang-en">Read the privacy policy.</span><span class="lang-hi">गोपनीयता नीति पढ़ें।</span></div>
+<div class="command"><code>/language</code><span class="lang-en">Change language.</span><span class="lang-hi">भाषा बदलें।</span></div>
+<div class="command"><code>/commands</code><span class="lang-en">List available commands.</span><span class="lang-hi">उपलब्ध कमांड देखें।</span></div>
+<div class="command"><code>/contact</code><span class="lang-en">Show public contact links.</span><span class="lang-hi">सार्वजनिक संपर्क लिंक दिखाएँ।</span></div>
+<div class="command"><code>/feedback</code><span class="lang-en">Submit feedback if handler is enabled.</span><span class="lang-hi">Handler चालू होने पर प्रतिक्रिया भेजें।</span></div>
+<div class="command"><code>/cancel</code><span class="lang-en">Cancel a pending interaction.</span><span class="lang-hi">लंबित प्रक्रिया रद्द करें।</span></div>
+<p class="notice">Admin commands: /admin, /stats, /reload, /list, /ai, /broadcast, /backup. These must be restricted server-side to the configured owner ID. Never expose secrets.</p>
+</div></div></section>
+<section class="section" id="terms"><div class="wrap"><h2 class="lang-en">Terms and conditions</h2><h2 class="lang-hi">नियम एवं शर्तें</h2>
+<details><summary>1. Acceptance / स्वीकृति</summary><p class="lang-en">Using the bot means you agree to the published terms. Stop using it if you disagree.</p><p class="lang-hi">बॉट का उपयोग प्रकाशित शर्तों से सहमति दर्शाता है। असहमति होने पर उपयोग बंद करें।</p></details>
+<details><summary>2. Service scope / सेवा का दायरा</summary><p class="lang-en">The bot is an informational AI interface. Features depend on the deployed implementation and third-party availability.</p><p class="lang-hi">बॉट एक सूचनात्मक AI इंटरफ़ेस है। सुविधाएँ तैनात Implementation और तृतीय-पक्ष उपलब्धता पर निर्भर हैं।</p></details>
+<details><summary>3. AI accuracy / AI सटीकता</summary><p class="lang-en">AI output may be incorrect or outdated. Verify important claims independently.</p><p class="lang-hi">AI उत्तर गलत या पुराने हो सकते हैं। महत्वपूर्ण दावों की स्वतंत्र पुष्टि करें।</p></details>
+<details><summary>4. Prohibited use / प्रतिबंधित उपयोग</summary><p class="lang-en">Do not use the bot for unlawful, abusive, fraudulent, or harmful activity.</p><p class="lang-hi">बॉट का उपयोग गैरकानूनी, अपमानजनक, धोखाधड़ी या हानिकारक गतिविधियों के लिए न करें।</p></details>
+<details><summary>5. Third-party services / तृतीय-पक्ष सेवाएँ</summary><p class="lang-en">Telegram, Cloudflare, and Google have their own terms and service limits.</p><p class="lang-hi">Telegram, Cloudflare और Google की अपनी शर्तें और सेवा सीमाएँ हैं।</p></details>
+<details><summary>6. Availability and liability / उपलब्धता और दायित्व</summary><p class="lang-en">No uninterrupted availability is promised. Use generated content at your own discretion and verify important information.</p><p class="lang-hi">बिना रुकावट उपलब्धता का वादा नहीं है। AI सामग्री का उपयोग विवेक से करें और महत्वपूर्ण जानकारी की पुष्टि करें।</p></details>
+</div></section>
+<section class="section" id="privacy"><div class="wrap"><h2 class="lang-en">Privacy overview</h2><h2 class="lang-hi">गोपनीयता का सार</h2>
+<div class="grid">
+<article class="card"><h3 class="lang-en">Telegram data</h3><h3 class="lang-hi">Telegram डेटा</h3><p class="lang-en">Telegram may provide user IDs, chat IDs, usernames, message text, and update metadata.</p><p class="lang-hi">Telegram User ID, Chat ID, Username, Message Text और Update Metadata दे सकता है।</p></article>
+<article class="card"><h3 class="lang-en">Gemini processing</h3><h3 class="lang-hi">Gemini Processing</h3><p class="lang-en">When AI is enabled, a prompt may be sent to Google Gemini API to generate an answer.</p><p class="lang-hi">AI चालू होने पर उत्तर बनाने के लिए Prompt Google Gemini API को भेजा जा सकता है।</p></article>
+<article class="card"><h3>Cloudflare KV</h3><p class="lang-en">The BOT_DATA binding exists in the project setup. Actual stored keys and retention depend on deployed Worker code.</p><p class="lang-hi">प्रोजेक्ट सेटअप में BOT_DATA Binding है। वास्तव में कौन-सा डेटा सेव होता है और कितने समय तक रहता है, यह Worker Code पर निर्भर है।</p></article>
+</div>
+<p class="notice lang-en">Never send passwords, OTPs, bank details, payment card information, government ID numbers, private medical records, or confidential business data.</p>
+<p class="notice lang-hi">पासवर्ड, OTP, बैंक विवरण, भुगतान कार्ड जानकारी, सरकारी पहचान संख्या, निजी मेडिकल रिकॉर्ड या गोपनीय व्यावसायिक डेटा कभी न भेजें।</p>
+</div></section>
+<section class="section"><div class="wrap card"><h2 class="lang-en">Created by Shiv Yogi</h2><h2 class="lang-hi">शिव योगी द्वारा निर्मित</h2><p class="lang-en">A student and technology enthusiast interested in coding, useful software projects, and accessible digital tools.</p><p class="lang-hi">एक विद्यार्थी और तकनीक प्रेमी जिन्हें कोडिंग, उपयोगी सॉफ्टवेयर प्रोजेक्ट और सुलभ डिजिटल टूल्स में रुचि है।</p><p><a href="https://t.me/ShivYogi19_bot">Telegram Bot</a> · <a href="https://github.com/shiv-yogi19/SHIV-YOGI-BOT">GitHub Repository</a></p></div></section>
+</main>
+<footer><div class="wrap">© 2026 SHIV YOGI BOT · Created by Shiv Yogi · Independent project. Not affiliated with Google, Cloudflare, or Telegram.</div></footer>
+<script>
+function setLang(lang){document.documentElement.dataset.lang=lang;document.documentElement.lang=lang;document.getElementById('en').classList.toggle('active',lang==='en');document.getElementById('hi').classList.toggle('active',lang==='hi');try{localStorage.setItem('shiv_yogi_lang',lang)}catch(e){}}
+try{const saved=localStorage.getItem('shiv_yogi_lang');if(saved==='hi'||saved==='en')setLang(saved)}catch(e){}
+</script>
+</body></html>

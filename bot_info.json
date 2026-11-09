@@ -1,0 +1,106 @@
+{
+  "project": {
+    "bot_name": "SHIV YOGI BOT",
+    "bot_handle": "@ShivYogi19_bot",
+    "telegram_url": "https://t.me/ShivYogi19_bot",
+    "version": "1.0.0",
+    "release_status": "Configuration and documentation package; runtime features must be verified in Worker",
+    "repository": "https://github.com/shiv-yogi19/SHIV-YOGI-BOT"
+  },
+  "creator": {
+    "name": "Shiv Yogi",
+    "role": {
+      "en": "Creator and Developer",
+      "hi": "निर्माता एवं डेवलपर"
+    },
+    "bio": {
+      "en": "Shiv Yogi is a technology enthusiast and student interested in programming, practical digital tools, and accessible AI experiences. This project reflects an interest in making AI assistance easier to access through Telegram.",
+      "hi": "शिव योगी एक प्रौद्योगिकी उत्साही और विद्यार्थी हैं, जिन्हें प्रोग्रामिंग, उपयोगी डिजिटल टूल्स और सुलभ एआई अनुभवों में रुचि है। यह परियोजना टेलीग्राम के माध्यम से एआई सहायता को आसानी से उपलब्ध कराने के इसी प्रयास को दर्शाती है।"
+    },
+    "contact": {
+      "telegram": "https://t.me/ShivYogi19_bot",
+      "support_channel": "https://github.com/shiv-yogi19/SHIV-YOGI-BOT/issues"
+    }
+  },
+  "ai_engine": {
+    "provider": "Google",
+    "core_technology": "Gemini API",
+    "capabilities": {
+      "en": "When enabled and correctly configured, the bot can forward a user's text prompt to the selected Google Gemini API model and return the generated response. Availability, quality, model access, latency, and quotas depend on Google's API service and the deployed Worker configuration.",
+      "hi": "सही कॉन्फ़िगरेशन और सक्रिय होने पर बॉट उपयोगकर्ता का टेक्स्ट प्रश्न चुने गए Google Gemini API मॉडल को भेज सकता है और प्राप्त उत्तर वापस दे सकता है। उपलब्धता, गुणवत्ता, मॉडल एक्सेस, गति और कोटा Google API सेवा तथा Worker कॉन्फ़िगरेशन पर निर्भर करते हैं।"
+    },
+    "admin_model_selection": {
+      "en": "Model selection is an intended administrative capability. It is available only after the Worker backend implements model discovery/validation, authorization, persistence, and safe switching.",
+      "hi": "मॉडल चयन एक नियोजित प्रशासनिक सुविधा है। यह तभी उपलब्ध मानी जाएगी जब Worker Backend में मॉडल सत्यापन, एडमिन अनुमति, सेटिंग सेव करने और सुरक्षित मॉडल बदलने की व्यवस्था लागू तथा परीक्षण की जा चुकी हो।"
+    },
+    "independent_status_disclaimer": {
+      "en": "SHIV YOGI BOT is an independent project created by Shiv Yogi. It is not owned, operated, sponsored, endorsed, or officially affiliated with Google, Cloudflare, or Telegram.",
+      "hi": "SHIV YOGI BOT शिव योगी द्वारा बनाया गया एक स्वतंत्र प्रोजेक्ट है। इसका Google, Cloudflare या Telegram के साथ कोई आधिकारिक स्वामित्व, संचालन, प्रायोजन, समर्थन या संबद्धता नहीं है।"
+    }
+  },
+  "technical_architecture": {
+    "platform": "Telegram Bot API",
+    "backend_platform": "Cloudflare Workers",
+    "content_source": "Public JSON files in the GitHub repository",
+    "content_sync_method": "Worker fetches raw GitHub JSON over HTTPS; optional KV caching and reload behavior require backend implementation",
+    "kv_binding": "BOT_DATA",
+    "supported_languages": [
+      {
+        "code": "en",
+        "name": "English",
+        "native_name": "English",
+        "direction": "ltr",
+        "default": false
+      },
+      {
+        "code": "hi",
+        "name": "Hindi",
+        "native_name": "हिन्दी",
+        "direction": "ltr",
+        "default": true
+      }
+    ]
+  },
+  "descriptions": {
+    "short": {
+      "en": "A bilingual Telegram AI assistant project by Shiv Yogi, designed to connect Telegram users with AI-powered question answering.",
+      "hi": "शिव योगी द्वारा बनाया गया द्विभाषी टेलीग्राम एआई सहायक प्रोजेक्ट, जिसका उद्देश्य उपयोगकर्ताओं को एआई आधारित प्रश्न-उत्तर सुविधा देना है।"
+    },
+    "long": {
+      "en": "SHIV YOGI BOT is designed as a Telegram-based question-answer assistant. Its planned architecture uses a Cloudflare Worker to receive Telegram updates, retrieve user preferences, call the Google Gemini API, and send responses back to Telegram. Public project information and bilingual text are maintained in this GitHub repository. Actual availability depends on the deployed backend, valid secrets, API access, and service quotas.",
+      "hi": "SHIV YOGI BOT को टेलीग्राम आधारित प्रश्न-उत्तर सहायक के रूप में बनाया जा रहा है। इसकी नियोजित संरचना में Cloudflare Worker टेलीग्राम अपडेट प्राप्त करता है, उपयोगकर्ता की भाषा प्राथमिकता पढ़ता है, Google Gemini API से उत्तर लेता है और उसे टेलीग्राम पर भेजता है। सार्वजनिक परियोजना जानकारी और द्विभाषी संदेश इस GitHub रिपॉजिटरी में रखे जाते हैं। वास्तविक सुविधा चालू Backend, सही Secrets, API एक्सेस और सेवा कोटा पर निर्भर करती है।"
+    }
+  },
+  "main_functionality": {
+    "en": [
+      "Receive messages and commands through the Telegram Bot API webhook.",
+      "Offer English and Hindi language selection and retain the preference when storage is implemented.",
+      "Send ordinary text questions to the configured Gemini API when AI is enabled.",
+      "Display public project information, help, terms, and privacy text from repository JSON files.",
+      "Provide administrator-only controls after strict Telegram user-ID authorization is implemented.",
+      "Use Cloudflare Workers and the BOT_DATA KV binding for serverless processing and selected persistent settings."
+    ],
+    "hi": [
+      "Telegram Bot API Webhook के माध्यम से संदेश और कमांड प्राप्त करना।",
+      "अंग्रेज़ी और हिन्दी भाषा चुनने की सुविधा देना तथा Storage लागू होने पर चयन सुरक्षित रखना।",
+      "AI चालू होने पर सामान्य टेक्स्ट प्रश्नों को कॉन्फ़िगर किए गए Gemini API तक भेजना।",
+      "रिपॉजिटरी की JSON फाइलों से सार्वजनिक जानकारी, सहायता, नियम और गोपनीयता नीति दिखाना।",
+      "सख्त Telegram User ID जाँच लागू होने के बाद ही एडमिन नियंत्रण उपलब्ध कराना।",
+      "Serverless Processing और चुनी हुई स्थायी सेटिंग्स के लिए Cloudflare Workers तथा BOT_DATA KV का उपयोग करना।"
+    ]
+  },
+  "important_disclaimers": {
+    "en": [
+      "AI-generated answers can be incorrect, incomplete, biased, or outdated. Verify important information.",
+      "Do not submit passwords, authentication codes, payment details, government ID numbers, or confidential information.",
+      "The bot is not a substitute for qualified medical, legal, financial, or other professional advice.",
+      "Google Gemini, Telegram, and Cloudflare are third-party services with their own terms, availability, and privacy practices."
+    ],
+    "hi": [
+      "एआई से मिले उत्तर गलत, अधूरे, पक्षपाती या पुराने हो सकते हैं। महत्वपूर्ण जानकारी की पुष्टि करें।",
+      "पासवर्ड, OTP, भुगतान विवरण, सरकारी पहचान संख्या या गोपनीय जानकारी न भेजें।",
+      "यह बॉट योग्य चिकित्सकीय, कानूनी, वित्तीय या अन्य पेशेवर सलाह का विकल्प नहीं है।",
+      "Google Gemini, Telegram और Cloudflare तृतीय-पक्ष सेवाएँ हैं जिनकी अपनी शर्तें, उपलब्धता और गोपनीयता नीतियाँ हैं।"
+    ]
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "project_title": "SHIV YOGI BOT",
+  "bot_handle": "@ShivYogi19_bot",
+  "version": "1.1.0",
+  "effective_date": "2026-11-09",
+  "repository": "https://github.com/shiv-yogi19/SHIV-YOGI-BOT",
+  "about": {
+    "introduction": {
+      "title": {
+        "en": "1. Introduction",
+        "hi": "1. परिचय"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT is a Telegram-based bilingual AI assistant project created by Shiv Yogi. It is designed to make text-based AI question answering accessible through a familiar chat interface. Its actual capabilities depend on the deployed Worker and configured third-party services.",
+        "hi": "SHIV YOGI BOT शिव योगी द्वारा बनाया गया टेलीग्राम आधारित द्विभाषी AI सहायक प्रोजेक्ट है। इसका उद्देश्य परिचित चैट इंटरफ़ेस के माध्यम से टेक्स्ट आधारित AI प्रश्न-उत्तर सुविधा उपलब्ध कराना है। इसकी वास्तविक क्षमताएँ तैनात Worker और कॉन्फ़िगर की गई तृतीय-पक्ष सेवाओं पर निर्भर करती हैं।"
+      }
+    },
+    "purpose": {
+      "title": {
+        "en": "2. Project Purpose",
+        "hi": "2. परियोजना का उद्देश्य"
+      },
+      "content": {
+        "en": "The project aims to make learning, exploration, and everyday problem-solving easier. Users can ask questions in English or Hindi without needing to learn a command for every ordinary request.",
+        "hi": "इस परियोजना का उद्देश्य सीखने, नई जानकारी खोजने और रोज़मर्रा की समस्याओं को समझने में सहायता देना है। उपयोगकर्ता हर सामान्य प्रश्न के लिए कमांड सीखे बिना अंग्रेज़ी या हिन्दी में प्रश्न पूछ सकते हैं।"
+      }
+    },
+    "capabilities": {
+      "title": {
+        "en": "3. Intended Capabilities",
+        "hi": "3. अपेक्षित क्षमताएँ"
+      },
+      "content": {
+        "en": "Depending on implementation and availability, the bot may assist with explanations, study support, programming concepts, drafting, translation, summaries, and general knowledge. It may refuse or limit unsafe requests.",
+        "hi": "Implementation और उपलब्धता के अनुसार बॉट अवधारणाएँ समझाने, पढ़ाई, प्रोग्रामिंग, लेखन, अनुवाद, सारांश और सामान्य ज्ञान में सहायता कर सकता है। असुरक्षित अनुरोधों को सीमित या अस्वीकार किया जा सकता है।"
+      }
+    },
+    "ai_engine_mechanism": {
+      "title": {
+        "en": "4. How Question Answering Works",
+        "hi": "4. प्रश्न-उत्तर प्रणाली कैसे काम करती है"
+      },
+      "content": {
+        "en": "The intended flow is: Telegram sends an update to the Worker webhook; the Worker validates the request and sender; it reads the language preference; it sends an eligible text prompt to the configured Gemini API; then it formats and sends the response to Telegram. Network latency, model availability, quotas, and platform limits affect response time.",
+        "hi": "निर्धारित प्रक्रिया यह है: Telegram Worker Webhook को Update भेजता है; Worker अनुरोध और Sender की जाँच करता है; भाषा प्राथमिकता पढ़ता है; उपयुक्त टेक्स्ट प्रश्न को कॉन्फ़िगर Gemini API तक भेजता है; फिर उत्तर को व्यवस्थित करके Telegram पर भेजता है। नेटवर्क गति, मॉडल उपलब्धता, कोटा और प्लेटफ़ॉर्म सीमाएँ उत्तर के समय को प्रभावित करती हैं।"
+      }
+    },
+    "gemini_integration": {
+      "title": {
+        "en": "5. Google Gemini Integration",
+        "hi": "5. Google Gemini एकीकरण"
+      },
+      "content": {
+        "en": "The project may use Google's Gemini API for AI generation. Google Gemini is a Google AI model family. SHIV YOGI BOT is an independent project and is not sponsored, endorsed, or operated by Google. API access and data handling are governed by Google's current terms and policies.",
+        "hi": "यह परियोजना AI उत्तर तैयार करने के लिए Google की Gemini API का उपयोग कर सकती है। Google Gemini, Google की AI मॉडल श्रृंखला है। SHIV YOGI BOT एक स्वतंत्र प्रोजेक्ट है और Google द्वारा प्रायोजित, समर्थित या संचालित नहीं है। API एक्सेस और डेटा प्रबंधन Google की वर्तमान शर्तों और नीतियों के अधीन हैं।"
+      }
+    },
+    "github_content": {
+      "title": {
+        "en": "6. GitHub Content Management",
+        "hi": "6. GitHub सामग्री प्रबंधन"
+      },
+      "content": {
+        "en": "Public JSON files in the repository contain project information, command descriptions, and user-facing text. A Worker can fetch these files over HTTPS. A reload command only works if the backend implements validation and cache refresh.",
+        "hi": "रिपॉजिटरी की सार्वजनिक JSON फाइलों में परियोजना जानकारी, कमांड विवरण और उपयोगकर्ता संदेश रखे जाते हैं। Worker इन फाइलों को HTTPS से प्राप्त कर सकता है। Reload कमांड तभी काम करेगी जब Backend में Validation और Cache Refresh लागू हों।"
+      }
+    },
+    "languages": {
+      "title": {
+        "en": "7. Language Support",
+        "hi": "7. भाषा समर्थन"
+      },
+      "content": {
+        "en": "The project documents English and Hindi. The initial /start greeting is intended to be in English, followed by language selection. After selection, supported bot messages should follow the chosen language. AI output language should be requested explicitly in the prompt.",
+        "hi": "परियोजना में अंग्रेज़ी और हिन्दी का समर्थन दर्ज है। /start का प्रारंभिक स्वागत संदेश अंग्रेज़ी में और उसके बाद भाषा चयन होना निर्धारित है। चयन के बाद समर्थित बॉट संदेश चुनी गई भाषा में होने चाहिए। AI उत्तर की भाषा Prompt में स्पष्ट रूप से निर्धारित की जानी चाहिए।"
+      }
+    },
+    "telegram_interface": {
+      "title": {
+        "en": "8. Telegram Interface",
+        "hi": "8. Telegram इंटरफ़ेस"
+      },
+      "content": {
+        "en": "Telegram provides the chat interface, user identity, update delivery, and message transport. Telegram platform limits and policies apply.",
+        "hi": "Telegram चैट इंटरफ़ेस, उपयोगकर्ता पहचान, Update Delivery और संदेश भेजने की सुविधा देता है। Telegram की प्लेटफ़ॉर्म सीमाएँ और नीतियाँ लागू होती हैं।"
+      }
+    },
+    "admin_system": {
+      "title": {
+        "en": "9. Administrative Controls",
+        "hi": "9. प्रशासनिक नियंत्रण"
+      },
+      "content": {
+        "en": "Administrative commands are documented separately. The Worker must authorize the sender using the numeric Telegram user ID 8226363418, not a username or chat ID alone. Each administrative feature must be implemented, tested, and protected before it is described as active.",
+        "hi": "एडमिन कमांड अलग से दर्ज हैं। Worker को केवल Numeric Telegram User ID 8226363418 के आधार पर अनुमति देनी चाहिए, केवल Username या Chat ID के आधार पर नहीं। किसी भी एडमिन सुविधा को सक्रिय बताने से पहले उसका Backend में कार्यान्वयन, परीक्षण और सुरक्षा आवश्यक है।"
+      }
+    },
+    "roadmap": {
+      "title": {
+        "en": "10. Development and Availability",
+        "hi": "10. विकास और उपलब्धता"
+      },
+      "content": {
+        "en": "Features may change as the project develops. A feature listed in documentation is not proof that the deployed bot currently supports it. The live Worker implementation is the source of truth for operational status.",
+        "hi": "परियोजना के विकास के साथ सुविधाएँ बदल सकती हैं। दस्तावेज़ में किसी सुविधा का उल्लेख इस बात का प्रमाण नहीं है कि चालू बॉट उसे अभी समर्थन देता है। परिचालन स्थिति का वास्तविक आधार Live Worker Implementation है।"
+      }
+    },
+    "responsible_ai": {
+      "title": {
+        "en": "11. Responsible AI Use",
+        "hi": "11. जिम्मेदार AI उपयोग"
+      },
+      "content": {
+        "en": "Use the bot lawfully and respectfully. Do not rely on generated output as the sole basis for high-impact decisions. Verify important claims with trusted primary sources.",
+        "hi": "बॉट का उपयोग कानूनी और सम्मानजनक तरीके से करें। महत्वपूर्ण निर्णयों का एकमात्र आधार AI उत्तर न बनाएँ। आवश्यक तथ्यों की विश्वसनीय मूल स्रोतों से पुष्टि करें।"
+      }
+    },
+    "creator_profile": {
+      "title": {
+        "en": "12. Creator Profile",
+        "hi": "12. निर्माता परिचय"
+      },
+      "content": {
+        "en": "Shiv Yogi is a student and technology enthusiast interested in coding, practical software projects, and accessible digital tools. This project is part of that learning and building journey.",
+        "hi": "शिव योगी एक विद्यार्थी और तकनीक प्रेमी हैं जिन्हें कोडिंग, उपयोगी सॉफ्टवेयर प्रोजेक्ट और सुलभ डिजिटल टूल्स में रुचि है। यह परियोजना उनकी सीखने और निर्माण की यात्रा का हिस्सा है।"
+      }
+    }
+  },
+  "terms_and_conditions": [
+    {
+      "id": 1,
+      "title": {
+        "en": "1. Acceptance",
+        "hi": "1. Acceptance"
+      },
+      "content": {
+        "en": "By using the bot, you agree to these terms. If you do not agree, stop using the bot.",
+        "hi": "बॉट का उपयोग करके आप इन शर्तों से सहमत होते हैं। सहमत न होने पर बॉट का उपयोग बंद करें।"
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "2. Service description",
+        "hi": "2. Service description"
+      },
+      "content": {
+        "en": "The bot is an informational AI interface. Features depend on the deployed implementation and third-party availability.",
+        "hi": "बॉट एक सूचनात्मक AI इंटरफ़ेस है। सुविधाएँ तैनात Implementation और तृतीय-पक्ष सेवाओं की उपलब्धता पर निर्भर हैं।"
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "3. Eligibility",
+        "hi": "3. Eligibility"
+      },
+      "content": {
+        "en": "You must be legally permitted to use Telegram and the relevant AI services in your jurisdiction.",
+        "hi": "आपके क्षेत्र में Telegram और संबंधित AI सेवाओं का उपयोग करने की कानूनी अनुमति होना आवश्यक है।"
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "4. User responsibility",
+        "hi": "4. User responsibility"
+      },
+      "content": {
+        "en": "You are responsible for the prompts and content you submit and for reviewing generated output.",
+        "hi": "आपके द्वारा भेजे गए Prompt और सामग्री तथा प्राप्त उत्तर की समीक्षा की जिम्मेदारी आपकी है।"
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "5. AI accuracy",
+        "hi": "5. AI accuracy"
+      },
+      "content": {
+        "en": "AI output may be inaccurate, incomplete, misleading, or outdated. Verify important information independently.",
+        "hi": "AI उत्तर गलत, अधूरे, भ्रामक या पुराने हो सकते हैं। महत्वपूर्ण जानकारी की स्वतंत्र रूप से पुष्टि करें।"
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "6. No professional advice",
+        "hi": "6. No professional advice"
+      },
+      "content": {
+        "en": "The bot does not provide certified medical, legal, financial, tax, or other professional advice.",
+        "hi": "बॉट प्रमाणित चिकित्सकीय, कानूनी, वित्तीय, कर या अन्य पेशेवर सलाह नहीं देता।"
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "en": "7. Prohibited content",
+        "hi": "7. Prohibited content"
+      },
+      "content": {
+        "en": "Do not use the bot to facilitate violence, abuse, exploitation, fraud, or other unlawful activity.",
+        "hi": "हिंसा, उत्पीड़न, शोषण, धोखाधड़ी या अन्य गैरकानूनी गतिविधियों में सहायता के लिए बॉट का उपयोग न करें।"
+      }
+    },
+    {
+      "id": 8,
+      "title": {
+        "en": "8. Privacy and sensitive data",
+        "hi": "8. Privacy and sensitive data"
+      },
+      "content": {
+        "en": "Do not submit passwords, OTPs, payment credentials, government identifiers, or confidential records.",
+        "hi": "पासवर्ड, OTP, भुगतान क्रेडेंशियल, सरकारी पहचान संख्या या गोपनीय रिकॉर्ड न भेजें।"
+      }
+    },
+    {
+      "id": 9,
+      "title": {
+        "en": "9. Third-party services",
+        "hi": "9. Third-party services"
+      },
+      "content": {
+        "en": "Telegram, Cloudflare, and Google operate under their own terms and privacy policies.",
+        "hi": "Telegram, Cloudflare और Google अपनी शर्तों और गोपनीयता नीतियों के अनुसार काम करते हैं।"
+      }
+    },
+    {
+      "id": 10,
+      "title": {
+        "en": "10. Availability",
+        "hi": "10. Availability"
+      },
+      "content": {
+        "en": "No uninterrupted, error-free, or permanent availability is guaranteed.",
+        "hi": "बिना रुकावट, त्रुटि-मुक्त या स्थायी उपलब्धता की गारंटी नहीं है।"
+      }
+    },
+    {
+      "id": 11,
+      "title": {
+        "en": "11. Rate limits",
+        "hi": "11. Rate limits"
+      },
+      "content": {
+        "en": "Requests may be limited by the Worker, Telegram, Cloudflare, or the AI provider. Actual limits depend on configuration and provider quotas.",
+        "hi": "Worker, Telegram, Cloudflare या AI Provider अनुरोध सीमित कर सकते हैं। वास्तविक सीमाएँ कॉन्फ़िगरेशन और Provider Quotas पर निर्भर हैं।"
+      }
+    },
+    {
+      "id": 12,
+      "title": {
+        "en": "12. API quotas and costs",
+        "hi": "12. API quotas and costs"
+      },
+      "content": {
+        "en": "AI access may be subject to provider quotas, pricing, and account restrictions. Do not assume unlimited free use.",
+        "hi": "AI एक्सेस Provider के कोटा, मूल्य और Account प्रतिबंधों के अधीन हो सकता है। असीमित मुफ्त उपयोग न मानें।"
+      }
+    },
+    {
+      "id": 13,
+      "title": {
+        "en": "13. Security",
+        "hi": "13. Security"
+      },
+      "content": {
+        "en": "Do not attempt to bypass access controls, exploit vulnerabilities, or obtain secrets or other users' data.",
+        "hi": "Access Controls को बायपास करने, कमजोरियों का दुरुपयोग करने या Secrets अथवा अन्य उपयोगकर्ताओं का डेटा पाने का प्रयास न करें।"
+      }
+    },
+    {
+      "id": 14,
+      "title": {
+        "en": "14. Admin access",
+        "hi": "14. Admin access"
+      },
+      "content": {
+        "en": "Administrative functions are restricted to authorized operators and must be enforced server-side.",
+        "hi": "एडमिन सुविधाएँ अधिकृत संचालकों तक सीमित हैं और Server-Side लागू होनी चाहिए।"
+      }
+    },
+    {
+      "id": 15,
+      "title": {
+        "en": "15. Intellectual property",
+        "hi": "15. Intellectual property"
+      },
+      "content": {
+        "en": "Respect the rights of third-party content owners and do not submit content you are not permitted to use.",
+        "hi": "तृतीय-पक्ष सामग्री के अधिकारों का सम्मान करें और ऐसी सामग्री न भेजें जिसके उपयोग की आपको अनुमति नहीं है।"
+      }
+    },
+    {
+      "id": 16,
+      "title": {
+        "en": "16. Generated content",
+        "hi": "16. Generated content"
+      },
+      "content": {
+        "en": "You are responsible for checking whether generated content is suitable for your intended use.",
+        "hi": "AI द्वारा तैयार सामग्री आपके उपयोग के लिए उपयुक्त है या नहीं, इसकी जाँच आपकी जिम्मेदारी है।"
+      }
+    },
+    {
+      "id": 17,
+      "title": {
+        "en": "17. External links",
+        "hi": "17. External links"
+      },
+      "content": {
+        "en": "External websites and services are outside the bot creator's control.",
+        "hi": "बाहरी वेबसाइट और सेवाएँ बॉट निर्माता के नियंत्रण से बाहर हैं।"
+      }
+    },
+    {
+      "id": 18,
+      "title": {
+        "en": "18. Feedback",
+        "hi": "18. Feedback"
+      },
+      "content": {
+        "en": "Feedback may be reviewed to improve the project if a feedback handler is implemented and receives it.",
+        "hi": "यदि Feedback Handler लागू है और प्रतिक्रिया प्राप्त करता है, तो परियोजना सुधार के लिए उसकी समीक्षा की जा सकती है।"
+      }
+    },
+    {
+      "id": 19,
+      "title": {
+        "en": "19. Suspension",
+        "hi": "19. Suspension"
+      },
+      "content": {
+        "en": "Access may be restricted to protect the service, users, or infrastructure, subject to applicable law.",
+        "hi": "सेवा, उपयोगकर्ताओं या Infrastructure की सुरक्षा के लिए लागू कानून के अधीन एक्सेस सीमित किया जा सकता है।"
+      }
+    },
+    {
+      "id": 20,
+      "title": {
+        "en": "20. Changes",
+        "hi": "20. Changes"
+      },
+      "content": {
+        "en": "Features and these terms may change. The effective date indicates the current published revision.",
+        "hi": "सुविधाएँ और ये शर्तें बदल सकती हैं। Effective Date वर्तमान प्रकाशित संशोधन को दर्शाती है।"
+      }
+    },
+    {
+      "id": 21,
+      "title": {
+        "en": "21. No warranty",
+        "hi": "21. No warranty"
+      },
+      "content": {
+        "en": "The bot is provided on an as-available basis without a promise that every response or feature will meet expectations.",
+        "hi": "बॉट उपलब्धता के आधार पर दिया जाता है; हर उत्तर या सुविधा के अपेक्षा के अनुरूप होने का वादा नहीं है।"
+      }
+    },
+    {
+      "id": 22,
+      "title": {
+        "en": "22. Limitation of liability",
+        "hi": "22. Limitation of liability"
+      },
+      "content": {
+        "en": "To the extent permitted by law, the creator is not liable for losses caused by reliance on AI output or third-party outages.",
+        "hi": "कानून द्वारा अनुमत सीमा तक, AI उत्तर पर निर्भरता या तृतीय-पक्ष सेवा बंद होने से हुए नुकसान के लिए निर्माता उत्तरदायी नहीं है।"
+      }
+    },
+    {
+      "id": 23,
+      "title": {
+        "en": "23. Indemnity",
+        "hi": "23. Indemnity"
+      },
+      "content": {
+        "en": "You are responsible for consequences arising from misuse of the bot or violation of these terms, as permitted by law.",
+        "hi": "कानून द्वारा अनुमत सीमा तक, बॉट के दुरुपयोग या शर्तों के उल्लंघन से उत्पन्न परिणामों की जिम्मेदारी आपकी है।"
+      }
+    },
+    {
+      "id": 24,
+      "title": {
+        "en": "24. Data retention",
+        "hi": "24. Data retention"
+      },
+      "content": {
+        "en": "Retention depends on the deployed Worker and KV implementation. The bot documentation must not promise deletion or non-storage unless verified.",
+        "hi": "डेटा कितने समय तक रखा जाता है यह तैनात Worker और KV Implementation पर निर्भर है। सत्यापन के बिना डेटा न रखने या हटाने का वादा नहीं किया जाना चाहिए।"
+      }
+    },
+    {
+      "id": 25,
+      "title": {
+        "en": "25. User communications",
+        "hi": "25. User communications"
+      },
+      "content": {
+        "en": "Do not assume a message to the bot is confidential or privileged.",
+        "hi": "बॉट को भेजे गए संदेश को गोपनीय या विशेषाधिकार प्राप्त संचार न मानें।"
+      }
+    },
+    {
+      "id": 26,
+      "title": {
+        "en": "26. Children and guardians",
+        "hi": "26. Children and guardians"
+      },
+      "content": {
+        "en": "If you are under the age required by applicable law or platform terms, use the service only with required guardian involvement.",
+        "hi": "यदि आपकी आयु लागू कानून या प्लेटफ़ॉर्म शर्तों के अनुसार आवश्यक सीमा से कम है, तो आवश्यक अभिभावकीय अनुमति के साथ ही सेवा उपयोग करें।"
+      }
+    },
+    {
+      "id": 27,
+      "title": {
+        "en": "27. Reporting issues",
+        "hi": "27. Reporting issues"
+      },
+      "content": {
+        "en": "Report bugs or abuse through the public repository issue tracker. Do not include secrets or personal sensitive data.",
+        "hi": "बग या दुरुपयोग की रिपोर्ट सार्वजनिक Repository Issue Tracker पर करें। Secrets या संवेदनशील निजी डेटा शामिल न करें।"
+      }
+    },
+    {
+      "id": 28,
+      "title": {
+        "en": "28. Independent project",
+        "hi": "28. Independent project"
+      },
+      "content": {
+        "en": "The bot is not officially affiliated with Telegram, Cloudflare, or Google.",
+        "hi": "बॉट Telegram, Cloudflare या Google से आधिकारिक रूप से संबद्ध नहीं है।"
+      }
+    },
+    {
+      "id": 29,
+      "title": {
+        "en": "29. Governing law",
+        "hi": "29. Governing law"
+      },
+      "content": {
+        "en": "Applicable law and dispute resolution depend on the creator's jurisdiction and mandatory consumer protections.",
+        "hi": "लागू कानून और विवाद समाधान निर्माता के क्षेत्राधिकार तथा अनिवार्य उपभोक्ता सुरक्षा नियमों पर निर्भर होंगे।"
+      }
+    },
+    {
+      "id": 30,
+      "title": {
+        "en": "30. Severability",
+        "hi": "30. Severability"
+      },
+      "content": {
+        "en": "If a provision is unenforceable, the remaining provisions continue to apply to the extent permitted by law.",
+        "hi": "यदि कोई प्रावधान लागू करने योग्य नहीं है, तो कानून द्वारा अनुमत सीमा तक बाकी प्रावधान लागू रहेंगे।"
+      }
+    }
+  ],
+  "privacy_policy": [
+    {
+      "id": 1,
+      "title": {
+        "en": "1. Data processed",
+        "hi": "1. Data processed"
+      },
+      "content": {
+        "en": "Telegram may provide user ID, chat ID, username, display name, message text, and update metadata to the bot through its Bot API.",
+        "hi": "Telegram Bot API के माध्यम से User ID, Chat ID, Username, Display Name, Message Text और Update Metadata बॉट तक पहुँच सकते हैं।"
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "2. Purpose",
+        "hi": "2. Purpose"
+      },
+      "content": {
+        "en": "Data is processed to receive updates, reply to users, apply language preferences, prevent abuse, and operate enabled features.",
+        "hi": "डेटा का उपयोग संदेश प्राप्त करने, उत्तर देने, भाषा प्राथमिकता लागू करने, दुरुपयोग रोकने और चालू सुविधाएँ चलाने के लिए होता है।"
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "3. AI provider",
+        "hi": "3. AI provider"
+      },
+      "content": {
+        "en": "When AI answering is enabled, the relevant prompt may be sent to the configured Google Gemini API. Avoid sending sensitive information.",
+        "hi": "AI उत्तर सुविधा चालू होने पर संबंधित Prompt कॉन्फ़िगर Google Gemini API को भेजा जा सकता है। संवेदनशील जानकारी न भेजें।"
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "4. Cloudflare processing",
+        "hi": "4. Cloudflare processing"
+      },
+      "content": {
+        "en": "The Worker runs on Cloudflare infrastructure. Request data may be processed in accordance with Cloudflare's service terms and privacy documentation.",
+        "hi": "Worker, Cloudflare Infrastructure पर चलता है। अनुरोध डेटा Cloudflare की सेवा शर्तों और गोपनीयता दस्तावेज़ों के अनुसार संसाधित हो सकता है।"
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "5. KV storage",
+        "hi": "5. KV storage"
+      },
+      "content": {
+        "en": "The project has a Cloudflare KV binding named BOT_DATA. The deployed code determines which keys are stored, their contents, and expiration. Do not assume message history is stored or not stored without inspecting the Worker.",
+        "hi": "इस परियोजना में BOT_DATA नाम का Cloudflare KV Binding है। कौन-सी Keys, किस प्रकार का डेटा और कितनी अवधि तक सेव होता है, यह तैनात Code तय करता है। Worker देखे बिना Message History के संग्रहण के बारे में दावा न करें।"
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "6. Language preference",
+        "hi": "6. Language preference"
+      },
+      "content": {
+        "en": "A selected language may be stored in KV so the bot can use it in later conversations, if that feature is implemented.",
+        "hi": "चुनी गई भाषा को बाद की बातचीत में उपयोग करने के लिए KV में सेव किया जा सकता है, यदि यह सुविधा लागू है।"
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "en": "7. Retention",
+        "hi": "7. Retention"
+      },
+      "content": {
+        "en": "Retention periods depend on KV expiration settings, Worker logic, provider logs, and Telegram's own systems. Publish exact periods only after verifying them.",
+        "hi": "डेटा रखने की अवधि KV Expiration, Worker Logic, Provider Logs और Telegram Systems पर निर्भर है। सही अवधि की पुष्टि के बाद ही उसे प्रकाशित करें।"
+      }
+    },
+    {
+      "id": 8,
+      "title": {
+        "en": "8. Security",
+        "hi": "8. Security"
+      },
+      "content": {
+        "en": "The project should keep API keys, bot tokens, and webhook secrets in Worker secrets, never in public JSON or HTML files.",
+        "hi": "API Keys, Bot Tokens और Webhook Secrets को Worker Secrets में रखना चाहिए, सार्वजनिक JSON या HTML फाइलों में नहीं।"
+      }
+    },
+    {
+      "id": 9,
+      "title": {
+        "en": "9. Sensitive information",
+        "hi": "9. Sensitive information"
+      },
+      "content": {
+        "en": "Do not send passwords, one-time codes, bank details, payment card data, government ID numbers, private medical records, or trade secrets.",
+        "hi": "पासवर्ड, OTP, बैंक विवरण, भुगतान कार्ड डेटा, सरकारी पहचान संख्या, निजी मेडिकल रिकॉर्ड या व्यापारिक रहस्य न भेजें।"
+      }
+    },
+    {
+      "id": 10,
+      "title": {
+        "en": "10. Third-party policies",
+        "hi": "10. Third-party policies"
+      },
+      "content": {
+        "en": "Telegram, Cloudflare, and Google have independent privacy policies and data practices. Review their current official documents.",
+        "hi": "Telegram, Cloudflare और Google की अपनी गोपनीयता नीतियाँ और डेटा प्रक्रियाएँ हैं। उनके वर्तमान आधिकारिक दस्तावेज़ पढ़ें।"
+      }
+    },
+    {
+      "id": 11,
+      "title": {
+        "en": "11. Your choices",
+        "hi": "11. Your choices"
+      },
+      "content": {
+        "en": "You can stop using or block the bot in Telegram. Requests to delete stored data must be handled through an implemented deletion process and applicable provider controls.",
+        "hi": "आप Telegram में बॉट का उपयोग रोक सकते हैं या उसे Block कर सकते हैं। सेव डेटा हटाने के अनुरोध के लिए लागू Deletion Process और Provider Controls आवश्यक हैं।"
+      }
+    }
+  ],
+  "thank_you": {
+    "title": {
+      "en": "Thank you for using SHIV YOGI BOT",
+      "hi": "SHIV YOGI BOT का उपयोग करने के लिए धन्यवाद"
+    },
+    "content": {
+      "en": "Thank you for trying this project and helping it improve through thoughtful use and feedback. Created by Shiv Yogi.",
+      "hi": "इस प्रोजेक्ट को आज़माने और उपयोगी प्रतिक्रिया से इसे बेहतर बनाने में मदद करने के लिए धन्यवाद। शिव योगी द्वारा निर्मित।"
+    }
+  }
+}

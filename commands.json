@@ -1,0 +1,393 @@
+{
+  "schema_version": "1.1.0",
+  "bot_name": "SHIV YOGI BOT",
+  "repository": "https://github.com/shiv-yogi19/SHIV-YOGI-BOT",
+  "specification_notice": {
+    "en": "This file documents command names, access expectations, bilingual descriptions, and intended behavior. It does not implement commands. Every command must be implemented and tested in the Cloudflare Worker before it is advertised as operational.",
+    "hi": "यह फाइल कमांड के नाम, एक्सेस नियम, द्विभाषी विवरण और अपेक्षित व्यवहार का दस्तावेज़ है। यह स्वयं कमांड लागू नहीं करती। किसी कमांड को चालू बताने से पहले उसे Cloudflare Worker में लागू और परीक्षण करना आवश्यक है।"
+  },
+  "user_commands": [
+    {
+      "command": "/start",
+      "name": "start",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Initialize the bot and show the initial English welcome with language buttons.",
+        "hi": "बॉट शुरू करें और भाषा चयन बटनों के साथ प्रारंभिक अंग्रेज़ी स्वागत संदेश दिखाएँ।"
+      },
+      "usage": {
+        "en": "/start",
+        "hi": "/start"
+      },
+      "details": {
+        "en": "Requires callback handling to save the selected language.",
+        "hi": "Requires callback handling to save the selected language."
+      }
+    },
+    {
+      "command": "/help",
+      "name": "help",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Show instructions for asking questions and using supported commands.",
+        "hi": "प्रश्न पूछने और उपलब्ध कमांड उपयोग करने के निर्देश दिखाएँ।"
+      },
+      "usage": {
+        "en": "/help",
+        "hi": "/help"
+      },
+      "details": {
+        "en": "Help text is loaded from config.json.",
+        "hi": "Help text is loaded from config.json."
+      }
+    },
+    {
+      "command": "/about",
+      "name": "about",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Show project purpose, architecture, capabilities, and creator information.",
+        "hi": "प्रोजेक्ट का उद्देश्य, तकनीकी संरचना, क्षमताएँ और निर्माता की जानकारी दिखाएँ।"
+      },
+      "usage": {
+        "en": "/about",
+        "hi": "/about"
+      },
+      "details": {
+        "en": "Content is sourced from about.json and bot_info.json.",
+        "hi": "Content is sourced from about.json and bot_info.json."
+      }
+    },
+    {
+      "command": "/creator",
+      "name": "creator",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Show the creator profile and official project links.",
+        "hi": "निर्माता का परिचय और आधिकारिक प्रोजेक्ट लिंक दिखाएँ।"
+      },
+      "usage": {
+        "en": "/creator",
+        "hi": "/creator"
+      },
+      "details": {
+        "en": "Do not display private contact details.",
+        "hi": "Do not display private contact details."
+      }
+    },
+    {
+      "command": "/features",
+      "name": "features",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "List the bot's documented features and their availability notes.",
+        "hi": "बॉट की दर्ज सुविधाओं और उनकी उपलब्धता संबंधी जानकारी दिखाएँ।"
+      },
+      "usage": {
+        "en": "/features",
+        "hi": "/features"
+      },
+      "details": {
+        "en": "Do not describe planned features as active.",
+        "hi": "Do not describe planned features as active."
+      }
+    },
+    {
+      "command": "/terms",
+      "name": "terms",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Display the Terms and Conditions.",
+        "hi": "नियम एवं शर्तें दिखाएँ।"
+      },
+      "usage": {
+        "en": "/terms",
+        "hi": "/terms"
+      },
+      "details": {
+        "en": "Terms are informational and are not legal advice.",
+        "hi": "Terms are informational and are not legal advice."
+      }
+    },
+    {
+      "command": "/privacy",
+      "name": "privacy",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Display the Privacy Policy and data handling summary.",
+        "hi": "गोपनीयता नीति और डेटा प्रबंधन का सार दिखाएँ।"
+      },
+      "usage": {
+        "en": "/privacy",
+        "hi": "/privacy"
+      },
+      "details": {
+        "en": "Policy must match actual Worker/KV behavior.",
+        "hi": "Policy must match actual Worker/KV behavior."
+      }
+    },
+    {
+      "command": "/language",
+      "name": "language",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Open the language selector.",
+        "hi": "भाषा चयन मेनू खोलें।"
+      },
+      "usage": {
+        "en": "/language",
+        "hi": "/language"
+      },
+      "details": {
+        "en": "Persist choice only if BOT_DATA storage is implemented.",
+        "hi": "Persist choice only if BOT_DATA storage is implemented."
+      }
+    },
+    {
+      "command": "/commands",
+      "name": "commands",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "List user-facing commands and explain admin-only access restrictions.",
+        "hi": "उपयोगकर्ता कमांड की सूची दिखाएँ और एडमिन कमांड की सुरक्षा समझाएँ।"
+      },
+      "usage": {
+        "en": "/commands",
+        "hi": "/commands"
+      },
+      "details": {
+        "en": "Do not reveal secrets or sensitive admin configuration.",
+        "hi": "Do not reveal secrets or sensitive admin configuration."
+      }
+    },
+    {
+      "command": "/contact",
+      "name": "contact",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Show public support and repository issue links.",
+        "hi": "सार्वजनिक सहायता और रिपॉजिटरी Issue लिंक दिखाएँ।"
+      },
+      "usage": {
+        "en": "/contact",
+        "hi": "/contact"
+      },
+      "details": {
+        "en": "Use public links only.",
+        "hi": "Use public links only."
+      }
+    },
+    {
+      "command": "/feedback",
+      "name": "feedback",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Accept a feedback message only if a feedback handler and delivery route are configured.",
+        "hi": "फीडबैक तभी स्वीकार करें जब उसका Handler और भेजने की व्यवस्था कॉन्फ़िगर हो।"
+      },
+      "usage": {
+        "en": "/feedback <your message>",
+        "hi": "/feedback <आपका संदेश>"
+      },
+      "details": {
+        "en": "Do not claim delivery unless the Worker confirms it.",
+        "hi": "Do not claim delivery unless the Worker confirms it."
+      }
+    },
+    {
+      "command": "/cancel",
+      "name": "cancel",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Clear a pending interactive state, if one exists.",
+        "hi": "यदि कोई इंटरैक्टिव प्रक्रिया लंबित है तो उसे रद्द करें।"
+      },
+      "usage": {
+        "en": "/cancel",
+        "hi": "/cancel"
+      },
+      "details": {
+        "en": "Safe no-op when there is no pending state.",
+        "hi": "Safe no-op when there is no pending state."
+      }
+    }
+  ],
+  "admin_commands": [
+    {
+      "command": "/admin",
+      "name": "admin",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "informational",
+      "description": {
+        "en": "Open the admin overview after validating the sender's Telegram user ID.",
+        "hi": "भेजने वाले की Telegram User ID सत्यापित करने के बाद एडमिन ओवरव्यू खोलें।"
+      },
+      "usage": {
+        "en": "/admin",
+        "hi": "/admin"
+      },
+      "details": {
+        "en": "Only the configured owner ID may use this command.",
+        "hi": "Only the configured owner ID may use this command."
+      }
+    },
+    {
+      "command": "/stats",
+      "name": "stats",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "informational",
+      "description": {
+        "en": "Show available usage counters and runtime status; omit metrics that are not actually collected.",
+        "hi": "उपलब्ध उपयोग आँकड़े और Runtime स्थिति दिखाएँ; जो आँकड़े एकत्र नहीं होते उन्हें न दिखाएँ।"
+      },
+      "usage": {
+        "en": "/stats",
+        "hi": "/stats"
+      },
+      "details": {
+        "en": "Metrics require explicit backend counters.",
+        "hi": "Metrics require explicit backend counters."
+      }
+    },
+    {
+      "command": "/reload",
+      "name": "reload",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Refresh validated public JSON configuration from GitHub and update cache entries.",
+        "hi": "GitHub से सत्यापित सार्वजनिक JSON कॉन्फ़िगरेशन रीफ़्रेश करें और Cache अपडेट करें।"
+      },
+      "usage": {
+        "en": "/reload",
+        "hi": "/reload"
+      },
+      "details": {
+        "en": "Must fetch, parse, validate, and only then replace cached values.",
+        "hi": "Must fetch, parse, validate, and only then replace cached values."
+      }
+    },
+    {
+      "command": "/list",
+      "name": "list",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "informational",
+      "description": {
+        "en": "Show safe operational settings and feature flags without exposing secrets.",
+        "hi": "Secrets दिखाए बिना सुरक्षित परिचालन सेटिंग्स और Feature Flags दिखाएँ।"
+      },
+      "usage": {
+        "en": "/list",
+        "hi": "/list"
+      },
+      "details": {
+        "en": "Never print API keys, bot tokens, webhook secrets, or private user data.",
+        "hi": "Never print API keys, bot tokens, webhook secrets, or private user data."
+      }
+    },
+    {
+      "command": "/ai",
+      "name": "ai",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Show AI status or select an allowed Gemini model after validation.",
+        "hi": "AI स्थिति दिखाएँ या सत्यापन के बाद अनुमत Gemini मॉडल चुनें।"
+      },
+      "usage": {
+        "en": "/ai",
+        "hi": "/ai"
+      },
+      "details": {
+        "en": "Model names must be checked against the current Gemini API; never accept arbitrary endpoint input.",
+        "hi": "Model names must be checked against the current Gemini API; never accept arbitrary endpoint input."
+      }
+    },
+    {
+      "command": "/broadcast",
+      "name": "broadcast",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Send an administrator-approved announcement to eligible registered users, if user registry and broadcast logic exist.",
+        "hi": "यदि User Registry और Broadcast Logic उपलब्ध हों तो स्वीकृत घोषणा पंजीकृत उपयोगकर्ताओं को भेजें।"
+      },
+      "usage": {
+        "en": "/broadcast <message>",
+        "hi": "/broadcast <संदेश>"
+      },
+      "details": {
+        "en": "Use batching, rate limits, opt-out handling, and delivery error tracking.",
+        "hi": "Use batching, rate limits, opt-out handling, and delivery error tracking."
+      }
+    },
+    {
+      "command": "/backup",
+      "name": "backup",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Create or inspect a safe export of non-secret configuration data, if implemented.",
+        "hi": "यदि लागू हो तो गैर-गोपनीय कॉन्फ़िगरेशन डेटा का सुरक्षित बैकअप बनाएँ या उसकी स्थिति देखें।"
+      },
+      "usage": {
+        "en": "/backup",
+        "hi": "/backup"
+      },
+      "details": {
+        "en": "Never export secrets or raw private conversations.",
+        "hi": "Never export secrets or raw private conversations."
+      }
+    },
+    {
+      "command": "/unknown",
+      "name": "unknown_command",
+      "access_level": "system",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Internal fallback for unknown slash commands; this is not a privileged user command.",
+        "hi": "अज्ञात Slash Command के लिए आंतरिक Fallback; यह उपयोगकर्ता के लिए विशेषाधिकार प्राप्त कमांड नहीं है।"
+      },
+      "usage": {
+        "en": "Internal handler",
+        "hi": "आंतरिक हैंडलर"
+      },
+      "details": {
+        "en": "Not exposed as a public admin command; no admin privilege is required.",
+        "hi": "Not exposed as a public admin command; no admin privilege is required."
+      }
+    }
+  ]
+}

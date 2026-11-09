@@ -1,0 +1,260 @@
+{
+  "app_info": {
+    "bot_name": "SHIV YOGI BOT",
+    "bot_handle": "@ShivYogi19_bot",
+    "tagline": {
+      "en": "Ask clearly. Learn continuously.",
+      "hi": "स्पष्ट पूछें। लगातार सीखें।"
+    },
+    "version": "1.0.0",
+    "creator": {
+      "name": "Shiv Yogi",
+      "title": {
+        "en": "Creator & Developer",
+        "hi": "निर्माता एवं डेवलपर"
+      },
+      "motto": {
+        "en": "Technology should make learning easier.",
+        "hi": "तकनीक सीखने को आसान बनाए।"
+      }
+    },
+    "links": {
+      "telegram_bot": "https://t.me/ShivYogi19_bot",
+      "github_repo": "https://github.com/shiv-yogi19/SHIV-YOGI-BOT",
+      "web_portal": "https://github.com/shiv-yogi19/SHIV-YOGI-BOT"
+    }
+  },
+  "language_settings": {
+    "default_language": "en",
+    "fallback_language": "en",
+    "supported_languages": [
+      {
+        "code": "en",
+        "label": "English",
+        "native_name": "English",
+        "confirmation": {
+          "en": "English selected.",
+          "hi": "English चुनी गई।"
+        }
+      },
+      {
+        "code": "hi",
+        "label": "Hindi",
+        "native_name": "हिन्दी",
+        "confirmation": {
+          "en": "Hindi selected.",
+          "hi": "हिन्दी चुनी गई।"
+        }
+      }
+    ],
+    "prompt": {
+      "en": "Please choose your language to continue.",
+      "hi": "आगे बढ़ने के लिए कृपया अपनी भाषा चुनें।"
+    },
+    "switch_instruction": {
+      "en": "Use /language whenever you want to change your language.",
+      "hi": "भाषा बदलने के लिए कभी भी /language का उपयोग करें।"
+    }
+  },
+  "welcome_messages": {
+    "initial_unselected": {
+      "title": "Welcome to SHIV YOGI BOT",
+      "greeting": "Hello! I’m SHIV YOGI BOT, a bilingual AI assistant project created by Shiv Yogi. I’m here to help you learn, explore ideas, and solve everyday questions. Please choose your language to begin.",
+      "prompt_language": "Choose your preferred language:",
+      "buttons": [
+        {
+          "text": "🇬🇧 English",
+          "callback_data": "lang:en"
+        },
+        {
+          "text": "🇮🇳 हिन्दी",
+          "callback_data": "lang:hi"
+        }
+      ]
+    },
+    "en": {
+      "title": "Welcome!",
+      "body": "Your language is set to English. Send a question directly in this chat. You do not need a command for normal questions.",
+      "footer": "Type /help to see available commands."
+    },
+    "hi": {
+      "title": "स्वागत है!",
+      "body": "आपकी भाषा हिन्दी चुन ली गई है। अब आप इसी चैट में सीधे अपना प्रश्न लिख सकते हैं। सामान्य प्रश्न पूछने के लिए किसी कमांड की आवश्यकता नहीं है।",
+      "footer": "उपलब्ध कमांड देखने के लिए /help लिखें।"
+    }
+  },
+  "help_messages": {
+    "en": {
+      "title": "How to use SHIV YOGI BOT",
+      "intro": "Send your question as a normal text message. The bot will use the configured AI service when it is enabled.",
+      "sections": [
+        {
+          "heading": "Ask a question",
+          "content": "Write one clear question at a time. Add context, constraints, and the format you want."
+        },
+        {
+          "heading": "Commands",
+          "content": "/start, /help, /about, /features, /terms, /privacy, /language, /commands, /contact, /feedback, /cancel"
+        },
+        {
+          "heading": "Language",
+          "content": "Use /language to switch between English and Hindi."
+        },
+        {
+          "heading": "AI limitations",
+          "content": "AI can make mistakes. Verify important facts and do not use it as professional advice."
+        },
+        {
+          "heading": "Privacy",
+          "content": "Do not send passwords, OTPs, payment details, government IDs, or confidential information."
+        }
+      ]
+    },
+    "hi": {
+      "title": "SHIV YOGI BOT का उपयोग कैसे करें",
+      "intro": "अपना प्रश्न सामान्य संदेश की तरह भेजें। AI सेवा कॉन्फ़िगर और चालू होने पर बॉट उसका उपयोग करेगा।",
+      "sections": [
+        {
+          "heading": "प्रश्न पूछें",
+          "content": "एक बार में एक स्पष्ट प्रश्न लिखें। ज़रूरी संदर्भ, सीमाएँ और इच्छित उत्तर का प्रारूप भी बताएँ।"
+        },
+        {
+          "heading": "कमांड",
+          "content": "/start, /help, /about, /features, /terms, /privacy, /language, /commands, /contact, /feedback, /cancel"
+        },
+        {
+          "heading": "भाषा",
+          "content": "अंग्रेज़ी और हिन्दी के बीच बदलने के लिए /language लिखें।"
+        },
+        {
+          "heading": "AI की सीमाएँ",
+          "content": "AI से गलती हो सकती है। महत्वपूर्ण तथ्यों की पुष्टि करें और इसे पेशेवर सलाह न मानें।"
+        },
+        {
+          "heading": "गोपनीयता",
+          "content": "पासवर्ड, OTP, भुगतान विवरण, सरकारी पहचान संख्या या गोपनीय जानकारी न भेजें।"
+        }
+      ]
+    }
+  },
+  "error_messages": {
+    "generic_error": {
+      "en": "Something went wrong. Please try again later.",
+      "hi": "कुछ समस्या हुई है। कृपया थोड़ी देर बाद फिर प्रयास करें।"
+    },
+    "rate_limit_exceeded": {
+      "en": "You are sending requests too quickly. Please wait a little and try again.",
+      "hi": "आप बहुत तेज़ी से अनुरोध भेज रहे हैं। कृपया थोड़ा रुककर फिर प्रयास करें।"
+    },
+    "gemini_api_unavailable": {
+      "en": "The AI service is temporarily unavailable. Please try again later.",
+      "hi": "AI सेवा फिलहाल उपलब्ध नहीं है। कृपया थोड़ी देर बाद प्रयास करें।"
+    },
+    "invalid_command": {
+      "en": "I do not recognize that command. Use /help or /commands.",
+      "hi": "यह कमांड समझ नहीं आई। /help या /commands का उपयोग करें।"
+    },
+    "unauthorized_admin": {
+      "en": "This command is restricted to the bot administrator.",
+      "hi": "यह कमांड केवल बॉट एडमिन के लिए है।"
+    },
+    "message_too_long": {
+      "en": "Your message is too long. Please shorten it and try again.",
+      "hi": "आपका संदेश बहुत लंबा है। कृपया उसे छोटा करके फिर भेजें।"
+    },
+    "network_timeout": {
+      "en": "The request took too long. Please try again.",
+      "hi": "अनुरोध में अधिक समय लगा। कृपया फिर प्रयास करें।"
+    }
+  },
+  "fallback_messages": {
+    "en": "Send a question as text, or use /help to see the available commands.",
+    "hi": "अपना प्रश्न टेक्स्ट में भेजें या उपलब्ध कमांड देखने के लिए /help लिखें।"
+  },
+  "thank_you_messages": {
+    "en": {
+      "title": "Thank you for using SHIV YOGI BOT",
+      "body": "Thank you for exploring this project. Your thoughtful feedback helps identify issues and improve the experience.",
+      "quote": "Keep learning, keep building. — Shiv Yogi"
+    },
+    "hi": {
+      "title": "SHIV YOGI BOT का उपयोग करने के लिए धन्यवाद",
+      "body": "इस प्रोजेक्ट को आज़माने के लिए आपका धन्यवाद। आपकी उपयोगी प्रतिक्रिया समस्याएँ पहचानने और अनुभव बेहतर बनाने में मदद करती है।",
+      "quote": "सीखते रहें, बनाते रहें। — शिव योगी"
+    }
+  },
+  "public_features": [
+    {
+      "id": "bilingual",
+      "icon": "language",
+      "title": {
+        "en": "English and Hindi",
+        "hi": "अंग्रेज़ी और हिन्दी"
+      },
+      "description": {
+        "en": "A language choice for supported bot messages and replies.",
+        "hi": "समर्थित बॉट संदेशों और उत्तरों के लिए भाषा चयन।"
+      }
+    },
+    {
+      "id": "direct_qa",
+      "icon": "message-circle",
+      "title": {
+        "en": "Direct questions",
+        "hi": "सीधे प्रश्न"
+      },
+      "description": {
+        "en": "Ask normal questions without typing a special command.",
+        "hi": "बिना विशेष कमांड लिखे सामान्य प्रश्न पूछें।"
+      }
+    },
+    {
+      "id": "gemini",
+      "icon": "sparkles",
+      "title": {
+        "en": "Gemini API integration",
+        "hi": "Gemini API एकीकरण"
+      },
+      "description": {
+        "en": "AI responses when the API and Worker are configured and enabled.",
+        "hi": "API और Worker सही तरह कॉन्फ़िगर तथा चालू होने पर AI उत्तर।"
+      }
+    },
+    {
+      "id": "github_content",
+      "icon": "github",
+      "title": {
+        "en": "GitHub-managed content",
+        "hi": "GitHub से प्रबंधित सामग्री"
+      },
+      "description": {
+        "en": "Public documentation and bilingual content are maintained as repository files.",
+        "hi": "सार्वजनिक दस्तावेज़ और द्विभाषी सामग्री रिपॉजिटरी फाइलों में रखी जाती है।"
+      }
+    },
+    {
+      "id": "serverless",
+      "icon": "cloud",
+      "title": {
+        "en": "Cloudflare Workers",
+        "hi": "Cloudflare Workers"
+      },
+      "description": {
+        "en": "Serverless webhook processing, subject to deployment and platform limits.",
+        "hi": "Serverless Webhook Processing, जो Deployment और Platform Limits पर निर्भर है।"
+      }
+    },
+    {
+      "id": "admin_safety",
+      "icon": "shield",
+      "title": {
+        "en": "Admin access controls",
+        "hi": "एडमिन एक्सेस सुरक्षा"
+      },
+      "description": {
+        "en": "Administrative actions must verify the Telegram sender ID on the server.",
+        "hi": "एडमिन कार्यों में सर्वर पर Telegram Sender ID सत्यापित करना अनिवार्य है।"
+      }
+    }
+  ]
+}
