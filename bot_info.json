@@ -1,0 +1,105 @@
+{
+  "project": {
+    "bot_name": "SHIV YOGI BOT",
+    "bot_handle": "@ShivYogi19_bot",
+    "telegram_url": "https://t.me/ShivYogi19_bot",
+    "version": "1.0.0",
+    "release_status": "Production Ready",
+    "repository": "https://github.com/SHIV-YOGI-BOT/SHIV-YOGI-BOT"
+  },
+  "creator": {
+    "name": "Shiv Yogi",
+    "role": {
+      "en": "Founder, Developer & Technology Enthusiast",
+      "hi": "संस्थापक, डेवलपर एवं प्रौद्योगिकी उत्साही"
+    },
+    "bio": {
+      "en": "Shiv Yogi is a dedicated technology enthusiast, programmer, and innovator focused on building accessible, high-utility digital tools and AI applications for individuals and communities worldwide.",
+      "hi": "शिव योगी एक समर्पित प्रौद्योगिकी प्रेमी, प्रोग्रामर और नवाचारकर्ता हैं, जो विश्व भर के व्यक्तियों और समुदायों के लिए सुलभ, उपयोगी डिजिटल उपकरण और एआई अनुप्रयोगों के निर्माण के लिए कार्य कर रहे हैं।"
+    },
+    "contact": {
+      "telegram": "https://t.me/ShivYogi19_bot",
+      "support_channel": "Available via /feedback and /contact in SHIV YOGI BOT"
+    }
+  },
+  "ai_engine": {
+    "provider": "Google Gemini",
+    "core_technology": "Google Gemini Large Language Model (API)",
+    "capabilities": {
+      "en": "Multilingual natural language understanding, contextual conversational answering, explanation of complex concepts, creative problem solving, and real-time knowledge synthesis.",
+      "hi": "बहुभाषी प्राकृतिक भाषा समझ, प्रासंगिक संवादात्मक उत्तर, जटिल अवधारणाओं का सरलीकरण, रचनात्मक समस्या समाधान, और त्वरित ज्ञान संश्लेषण।"
+    },
+    "admin_model_selection": {
+      "en": "Authorized Bot Administrators have full administrative capability to select, switch, and configure underlying Gemini AI models (such as Gemini Flash or Gemini Pro) dynamically to optimize speed, accuracy, and operational efficiency.",
+      "hi": "अधिकृत बॉट प्रशासकों के पास गति, सटीकता और परिचालन दक्षता को अनुकूलित करने के लिए जेमिनी एआई मॉडल (जैसे जेमिनी फ्लैश या जेमिनी प्रो) को गतिशील रूप से चुनने, बदलने और कॉन्फ़िगर करने की पूर्ण प्रशासनिक क्षमता है।"
+    },
+    "independent_status_disclaimer": {
+      "en": "SHIV YOGI BOT independently integrates the Google Gemini API to generate conversational AI responses. Google LLC does not own, operate, sponsor, officially endorse, or partner with SHIV YOGI BOT.",
+      "hi": "शिव योगी बॉट संवादात्मक एआई उत्तर उत्पन्न करने के लिए स्वतंत्र रूप से गूगल जेमिनी एपीआई का उपयोग करता है। गूगल एलएलसी (Google LLC) शिव योगी बॉट का स्वामित्व, संचालन, प्रायोजन, आधिकारिक समर्थन या साझेदारी नहीं करता है।"
+    }
+  },
+  "technical_architecture": {
+    "platform": "Telegram Messenger",
+    "backend_platform": "Cloudflare Workers (Serverless Edge Infrastructure)",
+    "content_source": "GitHub Repository (SHIV-YOGI-BOT)",
+    "content_sync_method": "Dynamic remote configuration fetching via HTTP raw repository endpoint",
+    "supported_languages": [
+      {
+        "code": "en",
+        "name": "English",
+        "native_name": "English",
+        "direction": "ltr",
+        "default": true
+      },
+      {
+        "code": "hi",
+        "name": "Hindi",
+        "native_name": "हिन्दी",
+        "direction": "ltr",
+        "script": "Devanagari"
+      }
+    ]
+  },
+  "descriptions": {
+    "short": {
+      "en": "SHIV YOGI BOT is a modern, bilingual Telegram AI assistant powered by Google Gemini and serverless Cloudflare Workers, providing intelligent question-answering in English and Hindi.",
+      "hi": "शिव योगी बॉट एक आधुनिक, द्विभाषी टेलीग्राम एआई सहायक है जो गूगल जेमिनी और सर्वरलेस क्लाउडफ्लेयर वर्कर्स द्वारा संचालित है, जो अंग्रेजी और हिन्दी में बुद्धिमान प्रश्नोत्तरी प्रदान करता है।"
+    },
+    "long": {
+      "en": "SHIV YOGI BOT is an advanced conversational artificial intelligence chatbot on Telegram created by Shiv Yogi. Designed to democratize access to world-class language models, the bot offers comprehensive answers across education, technology, general knowledge, writing, and logic. Built on a serverless Cloudflare Workers architecture and leveraging Google Gemini AI, it delivers instantaneous, natural responses in both English and pure Devanagari Hindi. Public bot configuration, commands, terms, and informational content are hosted transparently on GitHub.",
+      "hi": "शिव योगी बॉट टेलीग्राम पर एक उन्नत संवादात्मक कृत्रिम बुद्धिमत्ता (AI) चैटबॉट है जिसे शिव योगी द्वारा निर्मित किया गया है। विश्व स्तरीय भाषा मॉडलों तक सुलभ पहुंच प्रदान करने के उद्देश्य से डिजाइन किया गया यह बॉट शिक्षा, प्रौद्योगिकी, सामान्य ज्ञान, लेखन और तार्किक प्रश्नों के विस्तृत उत्तर प्रदान करता है। सर्वरलेस क्लाउडफ्लेयर वर्कर्स आर्किटेक्चर पर निर्मित और गूगल जेमिनी एआई द्वारा संचालित, यह अंग्रेजी और शुद्ध देवनागरी हिन्दी दोनों में त्वरित और स्वाभाविक उत्तर देता है। बॉट की सार्वजनिक सामग्री, कमांड्स, शर्तें और नीतियां पारदर्शी रूप से गिटहब पर होस्ट की गई हैं।"
+    }
+  },
+  "main_functionality": {
+    "en": [
+      "Real-time AI question answering across vast general and technical topics",
+      "Full bilingual communication in native English and authentic Devanagari Hindi",
+      "Dynamic language selection stored per user session",
+      "Zero clutter interface with intuitive command structure",
+      "Admin-managed AI model swapping and live configuration synchronization",
+      "Safe, respectful, and privacy-conscious interaction environment"
+    ],
+    "hi": [
+      "विशाल सामान्य और तकनीकी विषयों पर रीयल-टाइम एआई प्रश्नोत्तरी",
+      "प्राकृतिक अंग्रेजी और प्रामाणिक देवनागरी हिन्दी में पूर्ण द्विभाषी संचार",
+      "प्रति उपयोगकर्ता सत्र सहेजा गया गतिशील भाषा चयन",
+      "सहज कमांड संरचना के साथ स्वच्छ और सरल इंटरफ़ेस",
+      "व्यवस्थापक द्वारा प्रबंधित एआई मॉडल परिवर्तन और लाइव कॉन्फ़िगरेशन सिंक्रनाइज़ेशन",
+      "सुरक्षित, सम्मानजनक और गोपनीयता-जागरूक संवादात्मक वातावरण"
+    ]
+  },
+  "important_disclaimers": {
+    "en": [
+      "AI ACCURACY: Responses are synthesized automatically by artificial intelligence and may occasionally contain inaccuracies, hallucinations, omissions, or outdated facts. Always verify critical facts from official, authoritative sources.",
+      "NO PROFESSIONAL ADVICE: SHIV YOGI BOT is strictly an educational and informational tool. It does not provide certified medical, legal, financial, architectural, or professional advice of any nature.",
+      "THIRD-PARTY INFRASTRUCTURE: Data transmission and processing adhere to the operating terms and privacy policies of Telegram, Cloudflare, and Google Gemini.",
+      "AFFILIATION NOTICE: SHIV YOGI BOT is an independent community project by Shiv Yogi and is not officially affiliated with, endorsed by, or partnered with Google, Cloudflare, or Telegram."
+    ],
+    "hi": [
+      "एआई सटीकता: उत्तर कृत्रिम बुद्धिमत्ता द्वारा स्वचालित रूप से तैयार किए जाते हैं और कभी-कभी इनमें अशुद्धियाँ, काल्पनिक जानकारी (hallucinations), चूक या पुराने तथ्य हो सकते हैं। महत्वपूर्ण तथ्यों की पुष्टि हमेशा आधिकारिक व प्रमाणित स्रोतों से करें।",
+      "कोई पेशेवर सलाह नहीं: शिव योगी बॉट केवल एक शैक्षणिक और सूचनात्मक उपकरण है। यह किसी भी प्रकार की प्रमाणित चिकित्सीय, कानूनी, वित्तीय या पेशेवर सलाह प्रदान नहीं करता है।",
+      "तृतीय-पक्ष अवसंरचना: डेटा ट्रांसमिशन और प्रोसेसिंग टेलीग्राम, क्लाउडफ्लेयर और गूगल जेमिनी की संबंधित परिचालन शर्तों और गोपनीयता नीतियों के अधीन हैं।",
+      "संबद्धता सूचना: शिव योगी बॉट शिव योगी द्वारा एक स्वतंत्र सामुदायिक परियोजना है और यह गूगल, क्लाउडफ्लेयर या टेलीग्राम से आधिकारिक रूप से संबद्ध, समर्थित या अनुबंधित नहीं है।"
+    ]
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": "1.0.0",
+  "bot_name": "SHIV YOGI BOT",
+  "repository": "https://github.com/SHIV-YOGI-BOT/SHIV-YOGI-BOT",
+  "specification_notice": {
+    "en": "This commands.json document defines the authoritative command catalog, metadata, access boundaries, and bilingual descriptions for SHIV YOGI BOT. Documenting a command establishes its formal specification and documentation for bot interfaces and the web portal; physical runtime execution depends on backend implementation in the Cloudflare Worker webhook handler.",
+    "hi": "यह commands.json दस्तावेज़ शिव योगी बॉट के लिए आधिकारिक कमांड कैटलॉग, मेटाडेटा, एक्सेस सीमाएं और द्विभाषी विवरण परिभाषित करता है। किसी कमांड को प्रलेखित करना बॉट इंटरफेस और वेब पोर्टल के लिए इसके औपचारिक विनिर्देश और प्रलेखन को स्थापित करता है; भौतिक रनटाइम निष्पादन क्लाउडफ्लेयर वर्कर वेबहुक हैंडलर में संबंधित बैकएंड कार्यान्वयन पर निर्भर करता है।"
+  },
+  "user_commands": [
+    {
+      "command": "/start",
+      "name": "start",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Initialize the bot, receive the initial welcome greeting, and trigger the language selection menu.",
+        "hi": "बॉट को प्रारंभ करें, प्रारंभिक स्वागत संदेश प्राप्त करें और भाषा चयन मेनू सक्रिय करें।"
+      },
+      "usage": {
+        "en": "/start",
+        "hi": "/start"
+      },
+      "details": {
+        "en": "Sends an initial greeting in English prompting user to choose between English and Hindi. Once selected, stores user preference for subsequent interactions.",
+        "hi": "अंग्रेजी में प्रारंभिक अभिवादन भेजता है जिसमें उपयोगकर्ता को अंग्रेजी और हिन्दी के बीच चयन करने के लिए प्रेरित किया जाता है। चयन के बाद, आगामी सभी बातचीत के लिए उपयोगकर्ता प्राथमिकता सुरक्षित की जाती है।"
+      }
+    },
+    {
+      "command": "/help",
+      "name": "help",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Display comprehensive instructions on how to interact with the bot and ask questions.",
+        "hi": "बॉट के साथ संवाद करने और प्रश्न पूछने के तरीके पर विस्तृत निर्देश प्रदर्शित करें।"
+      },
+      "usage": {
+        "en": "/help",
+        "hi": "/help"
+      },
+      "details": {
+        "en": "Explains how to formulate questions for Google Gemini AI, lists primary commands, and provides troubleshooting advice in the user's chosen language.",
+        "hi": "गूगल जेमिनी एआई के लिए प्रश्न तैयार करने का तरीका बताता है, प्रमुख कमांड सूचीबद्ध करता है, और उपयोगकर्ता की चुनी गई भाषा में सहायता प्रदान करता है।"
+      }
+    },
+    {
+      "command": "/about",
+      "name": "about",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Read comprehensive details about SHIV YOGI BOT, its mission, technology architecture, and creator.",
+        "hi": "शिव योगी बॉट, इसके मिशन, तकनीकी संरचना और निर्माता के बारे में विस्तृत जानकारी पढ़ें।"
+      },
+      "usage": {
+        "en": "/about",
+        "hi": "/about"
+      },
+      "details": {
+        "en": "Delivers an extensive overview covering the purpose, Google Gemini AI integration, serverless Cloudflare Worker backbone, and creator background.",
+        "hi": "उद्देश्य, गूगल जेमिनी एआई एकीकरण, सर्वरलेस क्लाउडफ्लेयर वर्कर बैकबोन, और निर्माता की पृष्ठभूमि को कवर करने वाला एक व्यापक विवरण प्रदान करता है।"
+      }
+    },
+    {
+      "command": "/creator",
+      "name": "creator",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Learn about the founder and developer of SHIV YOGI BOT, Shiv Yogi.",
+        "hi": "शिव योगी बॉट के संस्थापक और डेवलपर शिव योगी के बारे में जानें।"
+      },
+      "usage": {
+        "en": "/creator",
+        "hi": "/creator"
+      },
+      "details": {
+        "en": "Presents a respectful profile of Shiv Yogi, highlighting his passion for programming, technology innovation, and creating accessible digital tools.",
+        "hi": "शिव योगी का एक सम्मानजनक विवरण प्रस्तुत करता है, जिसमें प्रोग्रामिंग, तकनीकी नवाचार और सुलभ डिजिटल उपकरण बनाने के उनके जुनून को रेखांकित किया गया है।"
+      }
+    },
+    {
+      "command": "/features",
+      "name": "features",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Explore the full suite of intelligent capabilities and features offered by SHIV YOGI BOT.",
+        "hi": "शिव योगी बॉट द्वारा प्रस्तुत बुद्धिमान क्षमताओं और सुविधाओं की पूरी सूची देखें।"
+      },
+      "usage": {
+        "en": "/features",
+        "hi": "/features"
+      },
+      "details": {
+        "en": "Summarizes key features including bilingual AI conversational intelligence, rapid responses, GitHub-synchronized knowledge, and privacy-respecting design.",
+        "hi": "द्विभाषी एआई संवादात्मक बुद्धिमत्ता, त्वरित उत्तर, गिटहब-सिंक्रनाइज़्ड ज्ञान और गोपनीयता-अनुकूल डिजाइन सहित प्रमुख विशेषताओं का विवरण देता है।"
+      }
+    },
+    {
+      "command": "/terms",
+      "name": "terms",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Review the full Terms and Conditions governing the use of SHIV YOGI BOT.",
+        "hi": "शिव योगी बॉट के उपयोग को नियंत्रित करने वाले संपूर्ण नियम और शर्तें पढ़ें।"
+      },
+      "usage": {
+        "en": "/terms",
+        "hi": "/terms"
+      },
+      "details": {
+        "en": "Provides direct access to the 30-section legal terms including fair usage, liability limitations, AI accuracy disclaimers, and prohibited actions.",
+        "hi": "उचित उपयोग, दायित्व सीमाएं, एआई सटीकता अस्वीकरण और प्रतिबंधित गतिविधियों सहित 30-खंडीय कानूनी शर्तों तक सीधी पहुंच प्रदान करता है।"
+      }
+    },
+    {
+      "command": "/privacy",
+      "name": "privacy",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Read the Privacy Policy explaining data handling, third-party processing, and user safety.",
+        "hi": "डेटा प्रबंधन, तृतीय-पक्ष प्रसंस्करण और उपयोगकर्ता सुरक्षा की व्याख्या करने वाली गोपनीयता नीति पढ़ें।"
+      },
+      "usage": {
+        "en": "/privacy",
+        "hi": "/privacy"
+      },
+      "details": {
+        "en": "Explains how Telegram identifiers are processed, how queries travel to Google Gemini, and guidelines on protecting personal confidential data.",
+        "hi": "समझाता है कि टेलीग्राम पहचानकर्ताओं को कैसे संसाधित किया जाता है, प्रश्न गूगल जेमिनी तक कैसे जाते हैं, और व्यक्तिगत गोपनीय डेटा की सुरक्षा के दिशानिर्देश देता है।"
+      }
+    },
+    {
+      "command": "/language",
+      "name": "language",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Switch your preferred language between English and Hindi at any time.",
+        "hi": "किसी भी समय अपनी पसंदीदा भाषा को अंग्रेजी और हिन्दी के बीच बदलें।"
+      },
+      "usage": {
+        "en": "/language",
+        "hi": "/language"
+      },
+      "details": {
+        "en": "Opens an inline keyboard allowing the user to switch between English and Hindi. Future messages are rendered in the selected language.",
+        "hi": "एक इनलाइन कीबोर्ड खोलता है जिससे उपयोगकर्ता अंग्रेजी और हिन्दी के बीच चयन कर सकता है। आगामी संदेश चुनी गई भाषा में प्रदर्शित होते हैं।"
+      }
+    },
+    {
+      "command": "/commands",
+      "name": "commands",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Display a structured directory of all commands available to users.",
+        "hi": "उपयोगकर्ताओं के लिए उपलब्ध सभी कमांड की एक संरचित सूची प्रदर्शित करें।"
+      },
+      "usage": {
+        "en": "/commands",
+        "hi": "/commands"
+      },
+      "details": {
+        "en": "Lists every user command with a concise summary of its function and expected usage syntax.",
+        "hi": "प्रत्येक उपयोगकर्ता कमांड को उसके कार्य और अपेक्षित उपयोग सिंटैक्स के संक्षिप्त विवरण के साथ सूचीबद्ध करता है।"
+      }
+    },
+    {
+      "command": "/contact",
+      "name": "contact",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "View official communication channels and ways to reach the creator.",
+        "hi": "आधिकारिक संचार माध्यम और निर्माता तक पहुंचने के तरीके देखें।"
+      },
+      "usage": {
+        "en": "/contact",
+        "hi": "/contact"
+      },
+      "details": {
+        "en": "Provides information on how to contact Shiv Yogi for inquiries, technical suggestions, or collaboration.",
+        "hi": "पूछताछ, तकनीकी सुझावों या सहयोग के लिए शिव योगी से संपर्क करने की जानकारी प्रदान करता है।"
+      }
+    },
+    {
+      "command": "/feedback",
+      "name": "feedback",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Submit feedback, bug reports, or feature suggestions directly to the creator.",
+        "hi": "निर्माता को सीधे फीडबैक, बग रिपोर्ट या सुविधा सुझाव भेजें।"
+      },
+      "usage": {
+        "en": "/feedback <your message>",
+        "hi": "/feedback <आपका संदेश>"
+      },
+      "details": {
+        "en": "Allows users to compose constructive feedback that can be routed to bot administrators for service improvement.",
+        "hi": "उपयोगकर्ताओं को रचनात्मक प्रतिक्रिया लिखने की अनुमति देता है जिसे सेवा सुधार के लिए बॉट प्रशासकों तक पहुंचाया जा सकता है।"
+      }
+    },
+    {
+      "command": "/cancel",
+      "name": "cancel",
+      "access_level": "user",
+      "auth_required": false,
+      "category": "action",
+      "description": {
+        "en": "Cancel any pending input, ongoing interactive session, or command prompt.",
+        "hi": "किसी भी लंबित इनपुट, चालू इंटरैक्टिव सत्र या कमांड प्रॉम्प्ट को रद्द करें।"
+      },
+      "usage": {
+        "en": "/cancel",
+        "hi": "/cancel"
+      },
+      "details": {
+        "en": "Clears any active multi-step state or pending input expectation, returning the conversation to normal prompt mode.",
+        "hi": "किसी भी सक्रिय बहु-चरणीय स्थिति या लंबित इनपुट अपेक्षा को समाप्त करता है, और बातचीत को सामान्य प्रश्न मोड में लौटाता है।"
+      }
+    }
+  ],
+  "admin_commands": [
+    {
+      "command": "/admin",
+      "name": "admin",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "informational",
+      "description": {
+        "en": "Open the secure administrative control panel and view privileged system status.",
+        "hi": "सुरक्षित प्रशासनिक नियंत्रण कक्ष खोलें और विशेषाधिकार प्राप्त सिस्टम स्थिति देखें।"
+      },
+      "usage": {
+        "en": "/admin",
+        "hi": "/admin"
+      },
+      "details": {
+        "en": "Validates administrator credentials and displays an overview of bot health, active AI engine, and administrative controls.",
+        "hi": "प्रशासक क्रेडेंशियल्स को सत्यापित करता है और बॉट स्वास्थ्य, सक्रिय एआई इंजन और प्रशासनिक नियंत्रणों का अवलोकन प्रदर्शित करता है।"
+      }
+    },
+    {
+      "command": "/stats",
+      "name": "stats",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "informational",
+      "description": {
+        "en": "Retrieve real-time operational statistics including request volume and performance metrics.",
+        "hi": "अनुरोध मात्रा और प्रदर्शन मेट्रिक्स सहित रीयल-टाइम परिचालन आंकड़े प्राप्त करें।"
+      },
+      "usage": {
+        "en": "/stats",
+        "hi": "/stats"
+      },
+      "details": {
+        "en": "Outputs diagnostic metrics such as aggregate queries processed, estimated latency, language split, and cache hit ratio.",
+        "hi": "संसाधित कुल प्रश्नों, अनुमानित विलंबता, भाषा वितरण और कैश हिट अनुपात जैसे नैदानिक मेट्रिक्स प्रदर्शित करता है।"
+      }
+    },
+    {
+      "command": "/reload",
+      "name": "reload",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Force an immediate refresh of content, terms, and command definitions from GitHub repository.",
+        "hi": "गिटहब रिपॉजिटरी से सामग्री, शर्तों और कमांड परिभाषाओं को तत्काल रीफ्रेश करें।"
+      },
+      "usage": {
+        "en": "/reload",
+        "hi": "/reload"
+      },
+      "details": {
+        "en": "Pulls latest versions of config.json, about.json, and commands.json from the GitHub master repository without redeploying the worker.",
+        "hi": "वर्कर को फिर से तैनात किए बिना गिटहब मुख्य रिपॉजिटरी से config.json, about.json और commands.json के नवीनतम संस्करण प्राप्त करता है।"
+      }
+    },
+    {
+      "command": "/list",
+      "name": "list",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "informational",
+      "description": {
+        "en": "List active system parameters, authorized administrator IDs, and feature flags.",
+        "hi": "सक्रिय सिस्टम पैरामीटर, अधिकृत व्यवस्थापक आईडी और फीचर फ्लैग्स की सूची देखें।"
+      },
+      "usage": {
+        "en": "/list",
+        "hi": "/list"
+      },
+      "details": {
+        "en": "Inspects operational runtime settings and authorized administrator identifiers configured in the backend environment.",
+        "hi": "बैकएंड वातावरण में कॉन्फ़िगर की गई परिचालन रनटाइम सेटिंग्स और अधिकृत व्यवस्थापक पहचानकर्ताओं का निरीक्षण करता है।"
+      }
+    },
+    {
+      "command": "/ai",
+      "name": "ai",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Inspect or switch the active Google Gemini AI model parameters and safety profiles.",
+        "hi": "सक्रिय गूगल जेमिनी एआई मॉडल पैरामीटर और सुरक्षा प्रोफाइल का निरीक्षण या परिवर्तन करें।"
+      },
+      "usage": {
+        "en": "/ai [model_name | status | temperature <val>]",
+        "hi": "/ai [model_name | status | temperature <मान>]"
+      },
+      "details": {
+        "en": "Enables the authorized admin to switch between Gemini model variants (e.g., gemini-1.5-flash, gemini-1.5-pro) and tune generation parameters.",
+        "hi": "अधिकृत व्यवस्थापक को जेमिनी मॉडल वेरिएंट (जैसे gemini-1.5-flash, gemini-1.5-pro) के बीच स्विच करने और जनरेशन पैरामीटर को समायोजित करने में सक्षम बनाता है।"
+      }
+    },
+    {
+      "command": "/broadcast",
+      "name": "broadcast",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Transmit an official system notice or announcement to registered bot users.",
+        "hi": "पंजीकृत बॉट उपयोगकर्ताओं को आधिकारिक सिस्टम सूचना या घोषणा प्रसारित करें।"
+      },
+      "usage": {
+        "en": "/broadcast <message content>",
+        "hi": "/broadcast <संदेश सामग्री>"
+      },
+      "details": {
+        "en": "Reserved for critical administrative updates, scheduled maintenance notices, or important announcements from Shiv Yogi.",
+        "hi": "महत्वपूर्ण प्रशासनिक अपडेट, निर्धारित रखरखाव नोटिस या शिव योगी की महत्वपूर्ण घोषणाओं के लिए सुरक्षित।"
+      }
+    },
+    {
+      "command": "/backup",
+      "name": "backup",
+      "access_level": "admin",
+      "auth_required": true,
+      "category": "action",
+      "description": {
+        "en": "Inspect system snapshot state or initiate an administrative configuration backup.",
+        "hi": "सिस्टम स्नैपशॉट स्थिति का निरीक्षण करें या प्रशासनिक कॉन्फ़िगरेशन बैकअप शुरू करें।"
+      },
+      "usage": {
+        "en": "/backup",
+        "hi": "/backup"
+      },
+      "details": {
+        "en": "Generates a diagnostic snapshot of persistent key-value configuration states and operational parameters for recovery purposes.",
+        "hi": "पुनर्प्राप्ति उद्देश्यों के लिए स्थायी की-वैल्यू (KV) कॉन्फ़िगरेशन स्थितियों और परिचालन मापदंडों का एक नैदानिक स्नैपशॉट उत्पन्न करता है।"
+      }
+    },
+    {
+      "command": "/unknown",
+      "name": "unknown",
+      "access_level": "admin",
+      "auth_required": false,
+      "category": "informational",
+      "description": {
+        "en": "Internal handler invoked when an unrecognized slash command is received.",
+        "hi": "आंतरिक हैंडलर जो किसी अज्ञात स्लैश कमांड प्राप्त होने पर सक्रिय होता है।"
+      },
+      "usage": {
+        "en": "/unknown",
+        "hi": "/unknown"
+      },
+      "details": {
+        "en": "Politely informs the user that the requested command does not exist and suggests typing /help or /commands to explore valid options.",
+        "hi": "उपयोगकर्ता को विनम्रतापूर्वक सूचित करता है कि अनुरोधित कमांड मौजूद नहीं है और मान्य विकल्प देखने के लिए /help या /commands टाइप करने का सुझाव देता है।"
+      }
+    }
+  ]
+}

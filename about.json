@@ -1,0 +1,601 @@
+{
+  "project_title": "SHIV YOGI BOT",
+  "bot_handle": "@ShivYogi19_bot",
+  "version": "1.0.0",
+  "effective_date": "2026-11-09",
+  "repository": "https://github.com/SHIV-YOGI-BOT/SHIV-YOGI-BOT",
+  "about": {
+    "introduction": {
+      "title": {
+        "en": "1. Introduction to SHIV YOGI BOT",
+        "hi": "1. शिव योगी बॉट का परिचय"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT is a modern, responsive, and intelligent conversational assistant available on the Telegram messaging platform. Developed with a vision to bring cutting-edge natural language processing and artificial intelligence into everyday communication, SHIV YOGI BOT serves as a knowledgeable, always-accessible companion for students, developers, professionals, and curious learners across the globe. Built using a robust serverless Cloudflare Workers infrastructure and powered by Google's state-of-the-art Gemini AI model, the bot delivers prompt, coherent, and contextually rich answers in both English and natural Devanagari Hindi.",
+        "hi": "शिव योगी बॉट टेलीग्राम मैसेजिंग प्लेटफॉर्म पर उपलब्ध एक आधुनिक, उत्तरदायी और बुद्धिमान संवादात्मक सहायक है। अत्याधुनिक प्राकृतिक भाषा प्रसंस्करण (NLP) और कृत्रिम बुद्धिमत्ता (AI) को रोजमर्रा के संचार में लाने के दृष्टिकोण से विकसित, शिव योगी बॉट दुनिया भर के छात्रों, डेवलपर्स, पेशेवरों और जिज्ञासु शिक्षार्थियों के लिए एक सुलभ साथी के रूप में कार्य करता है। एक मजबूत सर्वरलेस क्लाउडफ्लेयर वर्कर्स अवसंरचना पर निर्मित और गूगल के अत्याधुनिक जेमिनी एआई मॉडल द्वारा संचालित, यह बॉट अंग्रेजी और शुद्ध देवनागरी हिन्दी दोनों में त्वरित, सुसंगत और प्रासंगिक उत्तर प्रदान करता है।"
+      }
+    },
+    "purpose": {
+      "title": {
+        "en": "2. Purpose of Creating This Bot",
+        "hi": "2. इस बॉट के निर्माण का उद्देश्य"
+      },
+      "content": {
+        "en": "The core objective of SHIV YOGI BOT is the democratization of artificial intelligence. In an era where AI technology is rapidly advancing, access should not be constrained by complex software setups, geographic friction, or language barriers. Shiv Yogi conceptualized and built this bot to provide a clean, free, and bilingual digital gateway where anyone with a basic Telegram account can ask complex questions, solve homework problems, understand technical concepts, write creative drafts, or explore world knowledge—effortlessly and without technical hurdles.",
+        "hi": "शिव योगी बॉट का मूल उद्देश्य कृत्रिम बुद्धिमत्ता का लोकतंत्रीकरण करना है। ऐसे युग में जहां एआई तकनीक तेजी से विकसित हो रही है, इसकी पहुंच जटिल सॉफ्टवेयर सेटअप, भौगोलिक सीमाओं या भाषा अवरोधों से बाधित नहीं होनी चाहिए। शिव योगी ने इस बॉट की परिकल्पना और निर्माण एक स्वच्छ, सुलभ और द्विभाषी डिजिटल माध्यम प्रदान करने के लिए किया है, जहां कोई भी व्यक्ति टेलीग्राम खाते के जरिए जटिल प्रश्न पूछ सकता है, अध्ययन की समस्याओं का समाधान पा सकता है, तकनीकी अवधारणाओं को समझ सकता है और वैश्विक ज्ञान का अन्वेषण कर सकता है—वह भी बिना किसी तकनीकी बाधा के।"
+      }
+    },
+    "capabilities": {
+      "title": {
+        "en": "3. What Users Can Do With SHIV YOGI BOT",
+        "hi": "3. उपयोगकर्ता शिव योगी बॉट के साथ क्या-क्या कर सकते हैं"
+      },
+      "content": {
+        "en": "Users can engage with SHIV YOGI BOT across a comprehensive range of academic, technical, creative, and conversational tasks:\n• Academic & Learning: Explain mathematical principles, physics concepts, history timelines, scientific theories, and literature.\n• Programming & Development: Clarify programming concepts, debug code snippets, explain algorithms, and assist with coding logic across Python, JavaScript, C++, HTML/CSS, and more.\n• Writing & Drafting: Draft emails, essays, summaries, professional letters, social media posts, poetry, and creative stories.\n• Multilingual Translation: Translate sentences, explain linguistic nuances, and improve vocabulary in both English and Hindi.\n• Everyday Knowledge: Answer general knowledge questions, explore geography, discuss philosophy, and discover insightful solutions to daily queries.",
+        "hi": "उपयोगकर्ता शैक्षणिक, तकनीकी, रचनात्मक और संवादात्मक कार्यों की विस्तृत श्रृंखला के लिए शिव योगी बॉट का उपयोग कर सकते हैं:\n• शैक्षणिक एवं अध्ययन: गणितीय सिद्धांतों, भौतिकी के नियमों, ऐतिहासिक घटनाओं, वैज्ञानिक सिद्धांतों और साहित्य को समझना।\n• प्रोग्रामिंग एवं कोडिंग सहायता: कोडिंग अवधारणाओं को स्पष्ट करना, कोड स्निपेट्स को समझना, एल्गोरिदम सीखना, और पायथन, जावास्क्रिप्ट, सी++, एचटीएमएल/सीएसएस में सहायता पाना।\n• लेखन एवं प्रारूपण: ईमेल, निबंध, सारांश, औपचारिक पत्र, कविताएं और रचनात्मक कहानियां तैयार करना।\n• बहुभाषी अनुवाद: वाक्यों का अनुवाद करना, भाषाई बारीकियों को समझना और अंग्रेजी व हिन्दी में शब्दावली समृद्ध करना।\n• दैनिक ज्ञान एवं सामान्य ज्ञान: सामान्य ज्ञान के प्रश्नों के उत्तर पाना, भूगोल, दर्शन और दैनिक जिज्ञासाओं के ज्ञानवर्धक समाधान खोजना।"
+      }
+    },
+    "ai_engine_mechanism": {
+      "title": {
+        "en": "4. How the AI Question-Answer System Works",
+        "hi": "4. एआई प्रश्न-उत्तर प्रणाली कैसे कार्य करती है"
+      },
+      "content": {
+        "en": "When a user sends a message to SHIV YOGI BOT on Telegram, the interaction flows through an ultra-fast, serverless processing pipeline:\n1. Webhook Ingestion: Telegram instantly dispatches the user's message payload to a Cloudflare Worker edge function running globally close to the user.\n2. Context & Language Evaluation: The Worker retrieves the user's saved language preference (English or Hindi) and validates message structure.\n3. Google Gemini Processing: The user's query is securely formatted and transmitted to the Google Gemini AI API via an authenticated request. The Gemini model analyzes the prompt, understands semantic nuances, evaluates context, and synthesizes a comprehensive response.\n4. Response Formatting & Delivery: The Cloudflare Worker receives Gemini's generation, formats it cleanly into readable Markdown, and transmits it directly back to the Telegram chat. The entire round trip typically takes mere seconds.",
+        "hi": "जब कोई उपयोगकर्ता टेलीग्राम पर शिव योगी बॉट को कोई संदेश भेजता है, तो यह प्रक्रिया एक अत्यधिक तीव्र, सर्वरलेस पाइपलाइन के माध्यम से संचालित होती है:\n1. वेबहुक अंतर्ग्रहण: टेलीग्राम उपयोगकर्ता के संदेश पेलोड को क्लाउडफ्लेयर वर्कर एज फंक्शन पर तुरंत भेजता है, जो विश्व स्तर पर उपयोगकर्ता के निकटतम नोड पर चलता है।\n2. संदर्भ एवं भाषा मूल्यांकन: वर्कर उपयोगकर्ता की सहेजी गई भाषा प्राथमिकता (अंग्रेजी या हिन्दी) प्राप्त करता है और संदेश संरचना को मान्य करता है।\n3. गूगल जेमिनी प्रसंस्करण: उपयोगकर्ता के प्रश्न को सुरक्षित रूप से तैयार कर प्रमाणित अनुरोध के जरिए गूगल जेमिनी एआई एपीआई को भेजा जाता है। जेमिनी मॉडल संदेश का विश्लेषण करता है, संदर्भ को समझता है और एक विचारशील उत्तर तैयार करता है।\n4. उत्तर स्वरूपण एवं वितरण: क्लाउडफ्लेयर वर्कर जेमिनी के उत्तर को प्राप्त करता है, उसे साफ-सुथरे मार्कडाउन में प्रारूपित करता है, और टेलीग्राम चैट पर वापस भेजता है। यह पूरी प्रक्रिया आमतौर पर कुछ ही सेकंडों में पूरी होती है।"
+      }
+    },
+    "gemini_integration": {
+      "title": {
+        "en": "5. Google Gemini AI Integration & Official Disclaimer",
+        "hi": "5. गूगल जेमिनी एआई एकीकरण एवं आधिकारिक अस्वीकरण"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT integrates the Google Gemini Large Language Model (LLM) API as its core conversational reasoning engine. Google Gemini is developed by Google DeepMind and Google LLC, representing world-class multimodal and text reasoning capabilities.\n\nIMPORTANT INDEPENDENCE NOTICE: SHIV YOGI BOT is an independent digital tool conceived and implemented by Shiv Yogi. It uses Google Gemini API services on a client basis. Google LLC does NOT own, operate, sponsor, officially endorse, or maintain a corporate partnership with SHIV YOGI BOT. All references to Google and Gemini are solely for factual attribution of the underlying generative AI technology.",
+        "hi": "शिव योगी बॉट अपने मुख्य संवादात्मक तर्क इंजन के रूप में गूगल जेमिनी लार्ज लैंग्वेज मॉडल (LLM) एपीआई का उपयोग करता है। गूगल जेमिनी को गूगल डीपमाइंड और गूगल एलएलसी द्वारा विकसित किया गया है, जो विश्व स्तरीय भाषा और तार्किक क्षमताओं का प्रतिनिधित्व करता है।\n\nमहत्वपूर्ण स्वतंत्रता सूचना: शिव योगी बॉट शिव योगी द्वारा परिकल्पित और निर्मित एक स्वतंत्र डिजिटल उपकरण है। यह ग्राहक के रूप में गूगल जेमिनी एपीआई सेवाओं का उपयोग करता है। गूगल एलएलसी (Google LLC) शिव योगी बॉट का स्वामित्व, संचालन, प्रायोजन, आधिकारिक समर्थन या कॉर्पोरेट साझेदारी नहीं करता है। गूगल और जेमिनी के सभी संदर्भ केवल अंतर्निहित तकनीक के तथ्यात्मक उल्लेख के लिए हैं।"
+      }
+    },
+    "github_architecture": {
+      "title": {
+        "en": "6. GitHub as the Dynamic Knowledge and Configuration Source",
+        "hi": "6. गतिशील ज्ञान और कॉन्फ़िगरेशन स्रोत के रूप में गिटहब"
+      },
+      "content": {
+        "en": "Rather than hard-coding descriptions, terms, and command catalogues directly inside the compiled backend script, SHIV YOGI BOT adopts an open-source decoupled content architecture. All bot metadata, detailed about files, commands, and bilingual configurations are hosted transparently in the public GitHub repository (SHIV-YOGI-BOT). The Cloudflare Worker backend dynamically synchronizes with these GitHub files. This guarantees full transparency, allows updates without backend redeployment, and invites community review of bot policies and instructions.",
+        "hi": "संकलित बैकएंड स्क्रिप्ट के भीतर विवरणों, शर्तों और कमांड सूचियों को हार्ड-कोड करने के बजाय, शिव योगी बॉट एक पारदर्शी ओपन-सोर्स डीकपल्ड सामग्री आर्किटेक्चर अपनाता है। सभी बॉट मेटाडेटा, विस्तृत जानकारी, कमांड्स और द्विभाषी सेटिंग्स सार्वजनिक गिटहब रिपॉजिटरी (SHIV-YOGI-BOT) में पारदर्शी रूप से होस्ट की जाती हैं। क्लाउडफ्लेयर वर्कर बैकएंड इन गिटहब फाइलों से सीधे सिंक्रनाइज़ करता है। यह पूर्ण पारदर्शिता की गारंटी देता है, बिना कोड दोबारा परिनियोजित किए त्वरित अपडेट संभव बनाता है, और नीतियों की सार्वजनिक समीक्षा की अनुमति देता है।"
+      }
+    },
+    "language_selection_system": {
+      "title": {
+        "en": "7. Bilingual Language Architecture (English & Hindi)",
+        "hi": "7. द्विभाषी भाषा संरचना (अंग्रेजी और हिन्दी)"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT is built with uncompromising bilingual fidelity. Upon first starting the bot with /start, the user is greeted with an English introduction accompanied by interactive buttons to select their preferred language. Once the choice is made:\n• If Hindi is selected: All subsequent answers, error messages, menus, command descriptions, and notices are delivered exclusively in natural, grammatically correct Devanagari Hindi (not transliterated Roman Hindi).\n• If English is selected: All subsequent communications are delivered exclusively in refined English.\nLanguage settings are saved in user session storage and can be changed at any time by issuing /language.",
+        "hi": "शिव योगी बॉट को समझौता-रहित द्विभाषी निष्ठा के साथ तैयार किया गया है। /start के साथ पहली बार बॉट शुरू करने पर, उपयोगकर्ता का स्वागत अंग्रेजी संदेश और पसंदीदा भाषा चुनने के इंटरैक्टिव बटनों के साथ किया जाता है। एक बार चयन हो जाने के बाद:\n• यदि हिन्दी चुनी जाती है: तो आगामी सभी उत्तर, त्रुटि संदेश, मेनू, कमांड विवरण और सूचनाएं विशेष रूप से शुद्ध और स्वाभाविक देवनागरी हिन्दी (रोमन हिन्दी नहीं) में प्रदान की जाती हैं।\n• यदि अंग्रेजी चुनी जाती है: तो आगामी सभी संवाद परिष्कृत अंग्रेजी में प्रदान किए जाते हैं।\nभाषा प्राथमिकताएं उपयोगकर्ता सत्र में सुरक्षित रहती हैं और /language कमांड भेजकर किसी भी समय बदली जा सकती हैं।"
+      }
+    },
+    "interface_design": {
+      "title": {
+        "en": "8. User-Friendly Telegram Interface",
+        "hi": "8. उपयोगकर्ता-अनुकूल टेलीग्राम इंटरफ़ेस"
+      },
+      "content": {
+        "en": "Telegram offers an unmatched interface: fast, lightweight, secure, and accessible across mobile phones, tablets, and desktops. SHIV YOGI BOT embraces Telegram's native UX features including intuitive slash commands, inline buttons, formatted text, and responsive typing indicators that let users know the AI is generating their response.",
+        "hi": "टेलीग्राम एक अद्वितीय इंटरफ़ेस प्रदान करता है: तेज, हल्का, सुरक्षित और मोबाइल, टैबलेट व डेस्कटॉप पर सुलभ। शिव योगी बॉट टेलीग्राम की सहज सुविधाओं का उपयोग करता है जिनमें सरल स्लैश कमांड, इनलाइन बटन, सुव्यवस्थित टेक्स्ट और टाइपिंग संकेतक शामिल हैं, जो दर्शाते हैं कि एआई उत्तर तैयार कर रहा है।"
+      }
+    },
+    "admin_system": {
+      "title": {
+        "en": "9. Admin Management System & Dynamic AI Model Selection",
+        "hi": "9. व्यवस्थापक प्रबंधन प्रणाली एवं डायनामिक एआई मॉडल चयन"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT incorporates a secure administrative subsystem accessible only to authorized administrators (authenticated by secure Telegram user ID checks). Administrators can:\n• Dynamically inspect and switch underlying Google Gemini models (e.g., swapping between Gemini Flash for lightweight speed and Gemini Pro for deep reasoning) via the /ai command.\n• Trigger live configuration reloads from GitHub via /reload.\n• Monitor real-time operational health, request throughput, and diagnostic metrics via /stats.\n• Broadcast critical maintenance or service notices to users via /broadcast.",
+        "hi": "शिव योगी बॉट में एक सुरक्षित प्रशासनिक सबसिस्टम शामिल है जो केवल अधिकृत व्यवस्थापकों के लिए सुलभ है (टेलीग्राम यूजर आईडी द्वारा प्रमाणित)। व्यवस्थापक निम्नलिखित कार्य कर सकते हैं:\n• /ai कमांड के माध्यम से गूगल जेमिनी मॉडल को गतिशील रूप से जांचना और बदलना (उदा. गति के लिए जेमिनी फ्लैश और गहन तर्क के लिए जेमिनी प्रो)।\n• /reload के माध्यम से गिटहब से लाइव कॉन्फ़िगरेशन को तुरंत पुनः लोड करना।\n• /stats के माध्यम से रीयल-टाइम परिचालन स्वास्थ्य, अनुरोध प्रवाह और सिस्टम मेट्रिक्स की निगरानी करना।\n• /broadcast के माध्यम से उपयोगकर्ताओं को महत्वपूर्ण रखरखाव या सेवा सूचनाएं प्रसारित करना।"
+      }
+    },
+    "future_expansion": {
+      "title": {
+        "en": "10. Future Expansion and Continuous Improvements",
+        "hi": "10. भविष्य का विस्तार और निरंतर सुधार"
+      },
+      "content": {
+        "en": "The roadmap for SHIV YOGI BOT includes ambitious, user-focused milestones:\n• Multimodal Support: Processing image queries, diagrams, and document summaries.\n• Voice Queries: Integration of Telegram voice note processing for hands-free conversations.\n• Code Highlighting & Sandbox: Enhanced syntax blocks for software engineering inquiries.\n• Additional Regional Languages: Exploring further Indian language support based on community feedback.\n• Offline Knowledge Caching: Faster retrieval for frequently asked educational concepts.",
+        "hi": "शिव योगी बॉट की भविष्य की कार्ययोजना में महत्वाकांक्षी और उपयोगकर्ता-केंद्रित लक्ष्य शामिल हैं:\n• मल्टीमॉडल समर्थन: छवियों, आरेखों और दस्तावेज़ सारांशों को समझने की क्षमता।\n• वॉइस इनपुट: हाथों से मुक्त बातचीत के लिए टेलीग्राम वॉयस नोट प्रसंस्करण का एकीकरण।\n• कोड हाइलाइटिंग: सॉफ्टवेयर इंजीनियरिंग प्रश्नों के लिए उन्नत सिंटैक्स स्वरूपण।\n• अतिरिक्त क्षेत्रीय भाषाएं: सामुदायिक सुझावों के आधार पर अन्य भारतीय भाषाओं के समर्थन का विस्तार।\n• त्वरित ज्ञान कैशिंग: बार-बार पूछे जाने वाले शैक्षणिक प्रश्नों के लिए और भी तेज उत्तर।"
+      }
+    },
+    "responsible_ai": {
+      "title": {
+        "en": "11. Responsible AI Usage & Verification Notice",
+        "hi": "11. जिम्मेदार एआई उपयोग एवं सत्यापन सूचना"
+      },
+      "content": {
+        "en": "Artificial intelligence is a powerful cognitive tool, but it is not infallible. Users of SHIV YOGI BOT are strongly advised to practice responsible AI consumption:\n• Verification of Critical Facts: Responses may occasionally contain hallucinations, inaccuracies, or outdated assertions. Never rely on AI responses for life-critical, medical, legal, financial, or engineering decisions without verifying from accredited human professionals.\n• Ethical Use: Do not prompt the bot to generate harmful, illegal, abusive, sexually explicit, fraudulent, or harassing content.\n• Constructive Intent: Use this technology to augment your learning, inspire creativity, and build knowledge constructively.",
+        "hi": "कृत्रिम बुद्धिमत्ता एक शक्तिशाली साधन है, लेकिन यह अचूक नहीं है। शिव योगी बॉट के उपयोगकर्ताओं को जिम्मेदार एआई उपयोग की सलाह दी जाती है:\n• महत्वपूर्ण तथ्यों का सत्यापन: उत्तरों में कभी-कभी काल्पनिक विवरण (hallucinations), अशुद्धियां या पुरानी जानकारी हो सकती है। प्रमाणित मानव पेशेवरों से पुष्टि किए बिना जीवन-रक्षक, चिकित्सीय, कानूनी, वित्तीय या इंजीनियरिंग निर्णयों के लिए एआई पर निर्भर न रहें।\n• नैतिक उपयोग: बॉट से हानिकारक, गैरकानूनी, अपमानजनक, यौन रूप से स्पष्ट, धोखाधड़ी या उत्पीड़नकारी सामग्री उत्पन्न कराने का प्रयास न करें।\n• रचनात्मक उद्देश्य: इस तकनीक का उपयोग अपने अध्ययन को समृद्ध करने, रचनात्मकता को प्रेरित करने और ज्ञान के निर्माण के लिए करें।"
+      }
+    },
+    "creator_profile": {
+      "title": {
+        "en": "12. About the Creator: Shiv Yogi",
+        "hi": "12. निर्माता के बारे में: शिव योगी"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT was conceived, architected, and built with dedication by Shiv Yogi.\n\nShiv Yogi is a passionate technology enthusiast, programmer, and digital creator with a deep interest in software engineering, cloud computing, artificial intelligence, and open knowledge sharing. Driven by the philosophy that high-quality technology should be readily accessible to ordinary users rather than locked behind prohibitive barriers, Shiv Yogi designed this bot to unite simplicity with the power of modern neural models.\n\nWithout corporate funding or commercial motives, this project represents a sincere commitment to coding excellence, continuous learning, and serving the community with practical digital solutions.",
+        "hi": "शिव योगी बॉट की परिकल्पना, संरचना और निर्माण शिव योगी द्वारा पूर्ण समर्पण के साथ किया गया है।\n\nशिव योगी एक उत्साही प्रौद्योगिकी प्रेमी, प्रोग्रामर और डिजिटल निर्माता हैं, जिनकी गहरी रुचि सॉफ्टवेयर इंजीनियरिंग, क्लाउड कंप्यूटिंग, कृत्रिम बुद्धिमत्ता (AI) और खुले ज्ञान साझाकरण में है। इस दर्शन से प्रेरित होकर कि उच्च गुणवत्ता वाली तकनीक को बाधाओं में कैद करने के बजाय आम लोगों के लिए आसानी से सुलभ होना चाहिए, शिव योगी ने आधुनिक न्यूरल मॉडलों की शक्ति को सरलता के साथ संयोजित करते हुए इस बॉट का निर्माण किया।\n\nबिना किसी कॉर्पोरेट फंडिंग या व्यावसायिक स्वार्थ के, यह परियोजना कोडिंग उत्कृष्टता, निरंतर सीखने और व्यावहारिक डिजिटल समाधानों के माध्यम से समुदाय की सेवा करने की एक निष्ठावान पहल का प्रतिनिधित्व करती है।"
+      }
+    }
+  },
+  "terms_and_conditions": [
+    {
+      "section_number": 1,
+      "title": {
+        "en": "1. Acceptance of Terms",
+        "hi": "1. नियमों व शर्तों की स्वीकृति"
+      },
+      "content": {
+        "en": "By accessing, initiating, or interacting with SHIV YOGI BOT (@ShivYogi19_bot) on Telegram or viewing its documentation, you acknowledge that you have read, understood, and unconditionally agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must immediately discontinue use of the bot.",
+        "hi": "टेलीग्राम पर शिव योगी बॉट (@ShivYogi19_bot) तक पहुंचकर, उसे प्रारंभ करके, उसके साथ बातचीत करके या इसके प्रलेखन को देखकर, आप स्वीकार करते हैं कि आपने इन नियमों और शर्तों को पढ़ लिया है, समझ लिया है और बिना शर्त इनसे बंधे रहने के लिए सहमत हैं। यदि आप इन शर्तों के किसी भी हिस्से से असहमत हैं, तो आपको तुरंत इस बॉट का उपयोग बंद कर देना चाहिए।"
+      }
+    },
+    {
+      "section_number": 2,
+      "title": {
+        "en": "2. Description of Service",
+        "hi": "2. सेवा का विवरण"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT is an automated conversational artificial intelligence interface hosted on Telegram. It processes incoming text prompts sent by registered Telegram users and returns AI-generated responses using upstream large language model APIs. The bot is provided on an 'as-is' and 'as-available' basis for general informational, educational, and recreational purposes.",
+        "hi": "शिव योगी बॉट टेलीग्राम पर होस्ट किया गया एक स्वचालित संवादात्मक कृत्रिम बुद्धिमत्ता इंटरफ़ेस है। यह पंजीकृत टेलीग्राम उपयोगकर्ताओं द्वारा भेजे गए टेक्स्ट संदेशों को संसाधित करता है और अपस्ट्रीम लार्ज लैंग्वेज मॉडल एपीआई का उपयोग करके एआई-जनरेटेड उत्तर प्रदान करता है। यह बॉट सामान्य सूचनात्मक, शैक्षणिक और मनोरंजक उद्देश्यों के लिए 'जैसा है' (as-is) और 'जैसा उपलब्ध है' (as-available) आधार पर प्रदान किया जाता है।"
+      }
+    },
+    {
+      "section_number": 3,
+      "title": {
+        "en": "3. AI-Generated Responses",
+        "hi": "3. एआई द्वारा उत्पन्न उत्तर"
+      },
+      "content": {
+        "en": "All conversational answers, analyses, descriptions, and outputs provided by SHIV YOGI BOT are synthesized automatically by algorithmic artificial intelligence. Responses do not reflect the personal opinions, beliefs, official stance, or guaranteed knowledge of the creator Shiv Yogi. Automated systems may occasionally generate unexpected, unusual, or flawed textual answers.",
+        "hi": "शिव योगी बॉट द्वारा प्रदान किए गए सभी संवादात्मक उत्तर, विश्लेषण, विवरण और परिणाम एल्गोरिथम कृत्रिम बुद्धिमत्ता द्वारा स्वचालित रूप से तैयार किए जाते हैं। ये उत्तर निर्माता शिव योगी के व्यक्तिगत विचारों, मान्यताओं, आधिकारिक रुख या गारंटीकृत ज्ञान को प्रतिबिंबित नहीं करते हैं। स्वचालित प्रणालियाँ कभी-कभी अप्रत्याशित, असामान्य या त्रुटिपूर्ण पाठ्य उत्तर उत्पन्न कर सकती हैं।"
+      }
+    },
+    {
+      "section_number": 4,
+      "title": {
+        "en": "4. Google Gemini AI Integration",
+        "hi": "4. गूगल जेमिनी एआई एकीकरण"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT utilizes third-party API connectivity with Google Gemini AI to analyze natural language inputs and formulate responses. Google LLC does not own, manage, endorse, sponsor, or bear liability for SHIV YOGI BOT. Usage of this bot constitutes acknowledgment that user prompts are routed through Google's cloud computing infrastructure in accordance with applicable Google API policies.",
+        "hi": "शिव योगी बॉट प्राकृतिक भाषा इनपुट का विश्लेषण करने और प्रतिक्रियाएं तैयार करने के लिए गूगल जेमिनी एआई के साथ तृतीय-पक्ष एपीआई कनेक्टिविटी का उपयोग करता है। गूगल एलएलसी (Google LLC) शिव योगी बॉट का स्वामित्व, प्रबंधन, समर्थन, प्रायोजन या इसके लिए कोई दायित्व वहन नहीं करता है। इस बॉट का उपयोग इस बात की स्वीकृति है कि उपयोगकर्ता के प्रश्नों को लागू गूगल एपीआई नीतियों के अनुसार गूगल के क्लाउड इंफ्रास्ट्रक्चर के माध्यम से भेजा जाता है।"
+      }
+    },
+    {
+      "section_number": 5,
+      "title": {
+        "en": "5. AI Accuracy Limitations & Hallucinations",
+        "hi": "5. एआई सटीकता की सीमाएं और काल्पनिक उत्तर (Hallucinations)"
+      },
+      "content": {
+        "en": "Generative neural models can 'hallucinate'—meaning they may authoritatively present plausible-sounding yet completely fabricated, inaccurate, or outdated facts, citations, dates, or code. Users must independently verify critical data, calculations, historical assertions, and technical recommendations against credible primary sources before relying on them.",
+        "hi": "जेनेरेटिव न्यूरल मॉडल 'हलुसिनेट' (hallucinate) कर सकते हैं—अर्थात वे प्रशंसनीय लगने वाले लेकिन पूरी तरह से काल्पनिक, गलत या पुराने तथ्यों, उद्धरणों, तिथियों या कोड को आत्मविश्वास के साथ प्रस्तुत कर सकते हैं। उपयोगकर्ताओं को महत्वपूर्ण डेटा, गणनाओं, ऐतिहासिक दावों और तकनीकी सिफारिशों पर निर्भर होने से पहले विश्वसनीय प्राथमिक स्रोतों से स्वतंत्र रूप से पुष्टि करनी चाहिए।"
+      }
+    },
+    {
+      "section_number": 6,
+      "title": {
+        "en": "6. User Responsibilities",
+        "hi": "6. उपयोगकर्ता के उत्तरदायित्व"
+      },
+      "content": {
+        "en": "As a user, you are solely responsible for all messages, prompts, queries, and content you transmit to SHIV YOGI BOT, as well as for how you choose to utilize, distribute, or act upon the answers generated by the bot. You agree to exercise common sense, digital hygiene, and respectful communication at all times.",
+        "hi": "एक उपयोगकर्ता के रूप में, आप शिव योगी बॉट को भेजे जाने वाले सभी संदेशों, प्रश्नों और सामग्री के लिए, साथ ही बॉट द्वारा उत्पन्न उत्तरों का उपयोग, वितरण या उन पर कार्य करने के तरीके के लिए पूरी तरह से जिम्मेदार हैं। आप हर समय सामान्य विवेक, डिजिटल सुरक्षा और सम्मानजनक संचार बनाए रखने के लिए सहमत हैं।"
+      }
+    },
+    {
+      "section_number": 7,
+      "title": {
+        "en": "7. Prohibited Activities",
+        "hi": "7. प्रतिबंधित गतिविधियाँ"
+      },
+      "content": {
+        "en": "You agree not to exploit SHIV YOGI BOT for any malicious, disruptive, or unethical activity. Prohibited activities include attempting to bypass system prompts (jailbreaking), reverse-engineer API workflows, inject malicious code or SQL strings, extract confidential backend tokens, probe for server vulnerabilities, or impersonate system administrators.",
+        "hi": "आप शिव योगी बॉट का उपयोग किसी भी दुर्भावनापूर्ण, विघटनकारी या अनैतिक गतिविधि के लिए न करने के लिए सहमत हैं। प्रतिबंधित गतिविधियों में सिस्टम प्रॉम्प्ट को बायपास करने का प्रयास (जेलब्रेकिंग), रिवर्स-इंजीनियरिंग एपीआई वर्कफ़्लो, दुर्भावनापूर्ण कोड या एसक्यूएल इंजेक्शन, गोपनीय बैकएंड टोकन निकालने का प्रयास, सर्वर कमजोरियों की जांच करना, या सिस्टम प्रशासकों का रूप धारण करना शामिल है।"
+      }
+    },
+    {
+      "section_number": 8,
+      "title": {
+        "en": "8. Illegal Use Restrictions",
+        "hi": "8. गैरकानूनी उपयोग पर प्रतिबंध"
+      },
+      "content": {
+        "en": "Under no circumstances may SHIV YOGI BOT be used in furtherance of criminal, unlawful, or regulatory violations under applicable local, national, or international laws. This includes, without limitation: cybercrime, software piracy, malware synthesis, violent extremism, terrorism, child sexual abuse material (CSAM), illicit narcotics trafficking, weapons manufacturing instructions, money laundering, and fraud.",
+        "hi": "किसी भी परिस्थिति में शिव योगी बॉट का उपयोग लागू स्थानीय, राष्ट्रीय या अंतर्राष्ट्रीय कानूनों के तहत आपराधिक, गैरकानूनी या विनियामक उल्लंघनों को बढ़ावा देने के लिए नहीं किया जा सकता है। इसमें साइबर अपराध, सॉफ्टवेयर पायरेसी, मैलवेयर निर्माण, हिंसक उग्रवाद, आतंकवाद, बाल यौन शोषण सामग्री (CSAM), अवैध नशीले पदार्थों की तस्करी, हथियार निर्माण निर्देश, मनी लॉन्ड्रिंग और धोखाधड़ी शामिल हैं।"
+      }
+    },
+    {
+      "section_number": 9,
+      "title": {
+        "en": "9. Harassment and Abuse",
+        "hi": "9. उत्पीड़न और दुर्व्यवहार"
+      },
+      "content": {
+        "en": "Users are prohibited from transmitting abusive, vulgar, defamatory, stalking, threatening, hateful, discriminatory, racially inflammatory, sexually harassing, or harmful prompts toward any individual, group, or identity. Any attempt to generate target-specific hate speech will result in immediate and permanent revocation of bot access.",
+        "hi": "उपयोगकर्ताओं को किसी भी व्यक्ति, समूह या पहचान के प्रति अपमानजनक, अश्लील, मानहानिकारक, पीछा करने वाले, धमकी भरे, घृणास्पद, भेदभावपूर्ण, नस्लीय रूप से भड़काऊ, यौन उत्पीड़नकारी या हानिकारक संदेश भेजने की मनाही है। लक्षित घृणास्पद भाषण उत्पन्न करने के किसी भी प्रयास के परिणामस्वरूप बॉट तक पहुंच को तुरंत और स्थायी रूप से रद्द कर दिया जाएगा।"
+      }
+    },
+    {
+      "section_number": 10,
+      "title": {
+        "en": "10. Spam and Automated Misuse",
+        "hi": "10. स्पैम और स्वचालित दुरुपयोग"
+      },
+      "content": {
+        "en": "Automated flooding, multi-account bot forwarding, scripting mass queries, denial-of-service attempts, advertising spam, or sending repetitive programmatic requests to the bot without express authorization is strictly forbidden and monitored via edge firewall heuristics.",
+        "hi": "स्वचालित रूप से संदेशों की बाढ़ लाना (flooding), बहु-खाता बॉट अग्रेषण, मास प्रश्नों की स्क्रिप्टिंग, सेवा से वंचित करने के प्रयास (DoS), विज्ञापन स्पैम, या स्पष्ट प्राधिकरण के बिना बॉट को बार-बार स्वचालित अनुरोध भेजना सख्त वर्जित है और एज फ़ायरवॉल द्वारा इसकी निगरानी की जाती है।"
+      }
+    },
+    {
+      "section_number": 11,
+      "title": {
+        "en": "11. Rate Limits and Fair Usage",
+        "hi": "11. दर सीमाएं और उचित उपयोग (Fair Usage)"
+      },
+      "content": {
+        "en": "To guarantee equitable, high-performance availability for all community members, SHIV YOGI BOT enforces fair usage policies and dynamic request rate limits. If a user exceeds allowable query thresholds within a rolling window, the bot will throttle requests and return a rate limit notification until the quota refreshes.",
+        "hi": "सभी समुदाय के सदस्यों के लिए समान और उच्च-प्रदर्शन उपलब्धता की गारंटी के लिए, शिव योगी बॉट उचित उपयोग नीतियों (Fair Usage) और गतिशील अनुरोध दर सीमाओं को लागू करता है। यदि कोई उपयोगकर्ता निर्धारित समय सीमा के भीतर अनुमेय सीमा से अधिक प्रश्न पूछता है, तो बॉट अनुरोधों को रोक देगा और कोटा नवीनीकृत होने तक प्रतीक्षा संदेश दिखाएगा।"
+      }
+    },
+    {
+      "section_number": 12,
+      "title": {
+        "en": "12. API Availability and Third-Party Quotas",
+        "hi": "12. एपीआई की उपलब्धता और तृतीय-पक्ष कोटा"
+      },
+      "content": {
+        "en": "Bot operations rely directly upon upstream API quotas and infrastructure provided by Google Gemini and Telegram Bot API. If upstream provider quotas are saturated, undergo degradation, or change billing/tier policies, the bot's responsiveness may be constrained or temporarily curtailed without prior notice.",
+        "hi": "बॉट का संचालन सीधे तौर पर गूगल जेमिनी और टेलीग्राम बॉट एपीआई द्वारा प्रदान किए गए अपस्ट्रीम एपीआई कोटा और बुनियादी ढांचे पर निर्भर करता है। यदि अपस्ट्रीम प्रदाता कोटा समाप्त हो जाता है, प्रदर्शन में गिरावट आती है, या बिलिंग/टियर नीतियों में बदलाव होता है, तो बॉट की प्रतिक्रिया समय पर प्रभाव पड़ सकता है या पूर्व सूचना के बिना सेवाएं अस्थायी रूप से सीमित हो सकती हैं।"
+      }
+    },
+    {
+      "section_number": 13,
+      "title": {
+        "en": "13. Service Availability & Uptime",
+        "hi": "13. सेवा की उपलब्धता और अपटाइम"
+      },
+      "content": {
+        "en": "The creator endeavors to keep SHIV YOGI BOT accessible around the clock. However, uninterrupted, continuous, error-free, or zero-latency service is NOT guaranteed. Connectivity depends upon internet routing, cloud nodes, and global telecommunication factors beyond the creator's control.",
+        "hi": "निर्माता शिव योगी बॉट को 24 घंटे सुलभ रखने का हर संभव प्रयास करते हैं। हालांकि, निर्बाध, निरंतर, त्रुटिहीन या शून्य-विलंबता सेवा की गारंटी नहीं दी जाती है। कनेक्टिविटी इंटरनेट रूटिंग, क्लाउड नोड्स और वैश्विक दूरसंचार कारकों पर निर्भर करती है जो निर्माता के नियंत्रण से परे हैं।"
+      }
+    },
+    {
+      "section_number": 14,
+      "title": {
+        "en": "14. Maintenance and Downtime",
+        "hi": "14. रखरखाव और डाउनटाइम"
+      },
+      "content": {
+        "en": "Periodic maintenance, serverless code upgrades, dependency updates, and configuration enhancements may cause temporary downtime. The creator reserves the right to suspend or limit operations at any time for emergency patches, infrastructure migration, or scheduled optimizations.",
+        "hi": "आवधिक रखरखाव, सर्वरलेस कोड अपग्रेड, निर्भरता अपडेट और कॉन्फ़िगरेशन सुधारों के कारण अस्थायी डाउनटाइम हो सकता है। निर्माता आपातकालीन पैच, बुनियादी ढांचा प्रवास या निर्धारित अनुकूलन के लिए किसी भी समय संचालन को निलंबित या सीमित करने का अधिकार सुरक्षित रखते हैं।"
+      }
+    },
+    {
+      "section_number": 15,
+      "title": {
+        "en": "15. Model Availability and Changes",
+        "hi": "15. मॉडल की उपलब्धता और परिवर्तन"
+      },
+      "content": {
+        "en": "Underlying artificial intelligence models (such as versions of Google Gemini) are subject to modification, deprecation, fine-tuning, or replacement by their respective upstream vendors or bot administrators. Output style, response formatting, and conversational characteristics may evolve over time without individual notifications.",
+        "hi": "अंतर्निहित कृत्रिम बुद्धिमत्ता मॉडल (जैसे गूगल जेमिनी के संस्करण) उनके संबंधित अपस्ट्रीम विक्रेताओं या बॉट व्यवस्थापकों द्वारा संशोधन, अप्रचलन (deprecation), ट्यूनिंग या प्रतिस्थापन के अधीन हैं। आउटपुट शैली, प्रतिक्रिया प्रारूपण और संवादात्मक विशेषताएं व्यक्तिगत सूचना के बिना समय के साथ बदल सकती हैं।"
+      }
+    },
+    {
+      "section_number": 16,
+      "title": {
+        "en": "16. Third-Party Services",
+        "hi": "16. तृतीय-पक्ष सेवाएं"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT is built atop third-party ecosystems including Telegram Messenger (messaging routing), Cloudflare, Inc. (serverless edge execution), and Google LLC (AI generation). Your interaction with the bot is also governed by the terms of service, privacy statements, and acceptable use policies of these respective third-party providers.",
+        "hi": "शिव योगी बॉट टेलीग्राम मैसेंजर (संदेश रूटिंग), क्लाउडफ्लेयर, इंक. (सर्वरलेस एज निष्पादन), और गूगल एलएलसी (एआई जनरेशन) सहित तृतीय-पक्ष पारिस्थितिकी तंत्र पर निर्मित है। बॉट के साथ आपकी बातचीत इन संबंधित तृतीय-पक्ष प्रदाताओं की सेवा की शर्तों, गोपनीयता बयानों और स्वीकार्य उपयोग नीतियों द्वारा भी शासित होती है।"
+      }
+    },
+    {
+      "section_number": 17,
+      "title": {
+        "en": "17. External Links",
+        "hi": "17. बाहरी लिंक"
+      },
+      "content": {
+        "en": "Responses generated by the AI may occasionally incorporate or refer to external Uniform Resource Locators (URLs). The creator exercises no editorial control over, endorses, or assumes responsibility for the content, privacy practices, or security of external websites linked by the bot.",
+        "hi": "एआई द्वारा उत्पन्न उत्तरों में कभी-कभी बाहरी वेब लिंक (URLs) शामिल या संदर्भित हो सकते हैं। बॉट द्वारा उल्लेखित बाहरी वेबसाइटों की सामग्री, गोपनीयता प्रथाओं या सुरक्षा पर निर्माता का कोई संपादकीय नियंत्रण, समर्थन या जिम्मेदारी नहीं है।"
+      }
+    },
+    {
+      "section_number": 18,
+      "title": {
+        "en": "18. Intellectual Property",
+        "hi": "18. बौद्धिक संपदा"
+      },
+      "content": {
+        "en": "The name 'SHIV YOGI BOT', project documentation, repository structures, custom backend integrations, and presentation designs are the intellectual property of creator Shiv Yogi and the open repository contributors under applicable open-source licensing. Trademarks such as 'Telegram', 'Google', 'Gemini', and 'Cloudflare' belong solely to their respective owners.",
+        "hi": "'शिव योगी बॉट' नाम, परियोजना प्रलेखन, रिपॉजिटरी संरचना, कस्टम बैकएंड एकीकरण और प्रस्तुति डिजाइन लागू ओपन-सोर्स लाइसेंसिंग के तहत निर्माता शिव योगी और रिपॉजिटरी योगदानकर्ताओं की बौद्धिक संपदा हैं। 'टेलीग्राम', 'गूगल', 'जेमिनी' और 'क्लाउडफ्लेयर' जैसे ट्रेडमार्क केवल उनके संबंधित स्वामियों के हैं।"
+      }
+    },
+    {
+      "section_number": 19,
+      "title": {
+        "en": "19. User-Submitted Content",
+        "hi": "19. उपयोगकर्ता द्वारा प्रस्तुत सामग्री"
+      },
+      "content": {
+        "en": "You retain any intellectual property rights you hold in the text prompts you submit to the bot. However, by sending prompts, you grant SHIV YOGI BOT and its processing pipeline the technical license required to transmit, parse, process, and display the content solely for generating and returning your requested response.",
+        "hi": "आप बॉट को प्रस्तुत किए जाने वाले टेक्स्ट संदेशों में अपने किसी भी बौद्धिक संपदा अधिकार को बरकरार रखते हैं। हालांकि, संदेश भेजकर, आप शिव योगी बॉट और इसके प्रसंस्करण पाइपलाइन को केवल आपके अनुरोधित उत्तर को उत्पन्न करने और प्रदर्शित करने के उद्देश्य से सामग्री को प्रसारित, पार्स और संसाधित करने का आवश्यक तकनीकी अधिकार प्रदान करते हैं।"
+      }
+    },
+    {
+      "section_number": 20,
+      "title": {
+        "en": "20. Privacy and Data Handling",
+        "hi": "20. गोपनीयता और डेटा प्रबंधन"
+      },
+      "content": {
+        "en": "We respect user privacy and strive to handle data conservatively. User Telegram IDs, usernames, and language preferences are processed ephemerally to manage conversation sessions. For an extensive explanation of our data flows, edge processing, and limitations, please consult our separate Privacy Policy via /privacy.",
+        "hi": "हम उपयोगकर्ता की गोपनीयता का सम्मान करते हैं और डेटा को सुरक्षित रूप से संभालने का प्रयास करते हैं। उपयोगकर्ता टेलीग्राम आईडी, उपयोगकर्ता नाम और भाषा प्राथमिकताओं को वार्तालाप सत्रों के प्रबंधन के लिए अस्थायी रूप से संसाधित किया जाता है। हमारे डेटा प्रवाह, एज प्रोसेसिंग और सीमाओं के विस्तृत विवरण के लिए, कृपया /privacy के माध्यम से हमारी अलग गोपनीयता नीति देखें।"
+      }
+    },
+    {
+      "section_number": 21,
+      "title": {
+        "en": "21. Sensitive Information Warning",
+        "hi": "21. संवेदनशील जानकारी की चेतावनी"
+      },
+      "content": {
+        "en": "NEVER transmit confidential or sensitive information to SHIV YOGI BOT. This includes passwords, private encryption keys, banking credentials, payment card numbers, national identification numbers, confidential trade secrets, or protected health records. The bot is an open conversational tool and is NOT an encrypted vault.",
+        "hi": "शिव योगी बॉट को कभी भी गोपनीय या संवेदनशील व्यक्तिगत जानकारी न भेजें। इसमें पासवर्ड, निजी एन्क्रिप्शन कुंजी, बैंकिंग क्रेडेंशियल, पेमेंट कार्ड नंबर, राष्ट्रीय पहचान संख्या, गोपनीय व्यावसायिक रहस्य या सुरक्षित स्वास्थ्य रिकॉर्ड शामिल हैं। बॉट एक खुला संवादात्मक उपकरण है और यह कोई एन्क्रिप्टेड सुरक्षित तिजोरी नहीं है।"
+      }
+    },
+    {
+      "section_number": 22,
+      "title": {
+        "en": "22. Security Limitations",
+        "hi": "22. सुरक्षा सीमाएं"
+      },
+      "content": {
+        "en": "While the creator utilizes HTTPS encryption and industry-standard serverless deployment patterns on Cloudflare Workers, no electronic transmission over the internet or cloud environment can be guaranteed to be 100% impenetrable. Users transmit data at their own calculated risk.",
+        "hi": "यद्यपि निर्माता क्लाउडफ्लेयर वर्कर्स पर एचटीटीपीएस एन्क्रिप्शन और उद्योग-मानक सर्वरलेस परिनियोजन पैटर्न का उपयोग करते हैं, लेकिन इंटरनेट या क्लाउड वातावरण में किसी भी इलेक्ट्रॉनिक ट्रांसमिशन को 100% अभेद्य होने की गारंटी नहीं दी जा सकती है। उपयोगकर्ता अपने स्वयं के विवेक और जोखिम पर डेटा प्रसारित करते हैं।"
+      }
+    },
+    {
+      "section_number": 23,
+      "title": {
+        "en": "23. No Professional Advice",
+        "hi": "23. कोई पेशेवर सलाह नहीं (चिकित्सा/कानूनी/वित्तीय)"
+      },
+      "content": {
+        "en": "Outputs generated by SHIV YOGI BOT are strictly for educational and informational dialogue. Under no circumstances should bot outputs be treated as certified medical advice, legal counsel, professional financial or investment guidance, mental health therapy, or structural engineering specifications. Always consult certified human professionals for critical matters.",
+        "hi": "शिव योगी बॉट द्वारा उत्पन्न आउटपुट पूरी तरह से शैक्षणिक और सूचनात्मक संवाद के लिए हैं। किसी भी परिस्थिति में बॉट के उत्तरों को प्रमाणित चिकित्सीय सलाह, कानूनी परामर्श, पेशेवर वित्तीय या निवेश मार्गदर्शन, मानसिक स्वास्थ्य चिकित्सा या संरचनात्मक इंजीनियरिंग विनिर्देशों के रूप में नहीं माना जाना चाहिए। महत्वपूर्ण मामलों के लिए हमेशा प्रमाणित मानव पेशेवरों से परामर्श लें।"
+      }
+    },
+    {
+      "section_number": 24,
+      "title": {
+        "en": "24. Limitation of Liability",
+        "hi": "24. दायित्व की सीमा"
+      },
+      "content": {
+        "en": "To the maximum extent permitted by applicable law, the creator Shiv Yogi and repository contributors shall not be held liable for any direct, indirect, incidental, consequential, special, punitive, or exemplary damages, loss of profits, data corruption, business interruption, or personal injury arising out of or in connection with your use of, or inability to use, SHIV YOGI BOT.",
+        "hi": "लागू कानून द्वारा अनुमत अधिकतम सीमा तक, निर्माता शिव योगी और रिपॉजिटरी योगदानकर्ता शिव योगी बॉट के आपके उपयोग या उपयोग करने में असमर्थता से उत्पन्न किसी भी प्रत्यक्ष, अप्रत्यक्ष, आकस्मिक, परिणामी, विशेष, दंडात्मक या अनुकरणीय नुकसान, लाभ की हानि, डेटा भ्रष्टाचार, व्यवसाय में रुकावट या व्यक्तिगत क्षति के लिए उत्तरदायी नहीं होंगे।"
+      }
+    },
+    {
+      "section_number": 25,
+      "title": {
+        "en": "25. Changes to Terms",
+        "hi": "25. नियमों व शर्तों में बदलाव"
+      },
+      "content": {
+        "en": "The creator reserves the right to modify, amend, or replace these Terms and Conditions at any time. Updated terms become effective immediately upon being committed to the public GitHub repository. Continued use of SHIV YOGI BOT following any revisions signifies your complete acceptance of the updated terms.",
+        "hi": "निर्माता किसी भी समय इन नियमों और शर्तों को संशोधित, संशोधित या बदलने का अधिकार सुरक्षित रखते हैं। अद्यतन शर्तें सार्वजनिक गिटहब रिपॉजिटरी में प्रतिबद्ध होते ही तुरंत प्रभावी हो जाती हैं। किसी भी संशोधन के बाद शिव योगी बॉट का निरंतर उपयोग अद्यतन शर्तों की आपकी पूर्ण स्वीकृति को दर्शाता है।"
+      }
+    },
+    {
+      "section_number": 26,
+      "title": {
+        "en": "26. Suspension and Termination",
+        "hi": "26. निलंबन और समाप्ति"
+      },
+      "content": {
+        "en": "The creator and authorized bot administrators reserve the unreserved right to block, throttle, blacklist, or permanently terminate access to SHIV YOGI BOT for any user who violates these terms, engages in abuse, or jeopardizes system integrity, with or without prior warning.",
+        "hi": "निर्माता और अधिकृत बॉट प्रशासक किसी भी उपयोगकर्ता के लिए शिव योगी बॉट तक पहुंच को अवरुद्ध करने, सीमित करने, ब्लैकलिस्ट करने या स्थायी रूप से समाप्त करने का अधिकार सुरक्षित रखते हैं, जो इन शर्तों का उल्लंघन करता है, दुर्व्यवहार में संलग्न होता है, या सिस्टम की अखंडता को खतरे में डालता है, बिना किसी पूर्व चेतावनी के।"
+      }
+    },
+    {
+      "section_number": 27,
+      "title": {
+        "en": "27. Contact and Support",
+        "hi": "27. संपर्क और सहायता"
+      },
+      "content": {
+        "en": "Users can submit questions, reports of service anomalies, or constructive feedback to creator Shiv Yogi through the bot interface using the /feedback and /contact commands, or by opening an issue on the official GitHub repository.",
+        "hi": "उपयोगकर्ता /feedback और /contact कमांड का उपयोग करके बॉट इंटरफ़ेस के माध्यम से, या आधिकारिक गिटहब रिपॉजिटरी पर एक 'Issue' खोलकर निर्माता शिव योगी को प्रश्न, सेवा विसंगतियों की रिपोर्ट या रचनात्मक प्रतिक्रिया भेज सकते हैं।"
+      }
+    },
+    {
+      "section_number": 28,
+      "title": {
+        "en": "28. Governing Law and Dispute Resolution",
+        "hi": "28. लागू कानून और विवाद समाधान"
+      },
+      "content": {
+        "en": "These Terms shall be interpreted and governed in accordance with applicable general legal principles governing electronic communications and software tools. Any dispute or concern should first be brought to the creator amicably through official contact channels for good-faith resolution.",
+        "hi": "इन शर्तों की व्याख्या और संचालन इलेक्ट्रॉनिक संचार और सॉफ्टवेयर उपकरणों को नियंत्रित करने वाले लागू सामान्य कानूनी सिद्धांतों के अनुसार किया जाएगा। किसी भी विवाद या चिंता को सबसे पहले आधिकारिक संपर्क माध्यमों के जरिए निर्माता के समक्ष सौहार्दपूर्ण समाधान के लिए प्रस्तुत किया जाना चाहिए।"
+      }
+    },
+    {
+      "section_number": 29,
+      "title": {
+        "en": "29. Effective Date",
+        "hi": "29. प्रभावी तिथि"
+      },
+      "content": {
+        "en": "These Terms and Conditions are formally enacted and effective as of November 9, 2026, superseding all prior informal notes, notices, or verbal descriptions regarding SHIV YOGI BOT.",
+        "hi": "ये नियम और शर्तें 9 नवंबर, 2026 से औपचारिक रूप से लागू और प्रभावी हैं, जो शिव योगी बॉट के संबंध में पूर्व के सभी अनौपचारिक नोट्स, नोटिस या मौखिक विवरणों का स्थान लेते हैं।"
+      }
+    },
+    {
+      "section_number": 30,
+      "title": {
+        "en": "30. Final Agreement and Severability",
+        "hi": "30. अंतिम समझौता और पृथक्करणीयता"
+      },
+      "content": {
+        "en": "These Terms, together with the Privacy Policy, constitute the full agreement between you and the service provider concerning SHIV YOGI BOT. If any provision is deemed unenforceable or invalid by a court of competent jurisdiction, the remaining provisions shall remain fully valid, enforceable, and in full effect.",
+        "hi": "ये शर्तें, गोपनीयता नीति के साथ, शिव योगी बॉट के संबंध में आपके और सेवा प्रदाता के बीच पूर्ण समझौते का गठन करती हैं। यदि किसी प्रावधान को सक्षम क्षेत्राधिकार की अदालत द्वारा अप्रवर्तनीय या अमान्य माना जाता है, तो शेष प्रावधान पूरी तरह से मान्य, लागू करने योग्य और पूर्ण प्रभाव में रहेंगे।"
+      }
+    }
+  ],
+  "privacy_policy": [
+    {
+      "section_number": 1,
+      "title": {
+        "en": "1. Telegram User Identifiers and Message Data",
+        "hi": "1. टेलीग्राम उपयोगकर्ता पहचानकर्ता और संदेश डेटा"
+      },
+      "content": {
+        "en": "When you interact with SHIV YOGI BOT on Telegram, our edge processing pipeline receives standard metadata provided by the Telegram Bot API: your unique numerical Telegram User ID, first and last name, public username (if configured), chat ID, and the text content of your sent message. This information is processed strictly in real-time to generate and route the conversational response back to your specific Telegram chat.",
+        "hi": "जब आप टेलीग्राम पर शिव योगी बॉट के साथ बातचीत करते हैं, तो हमारा एज प्रोसेसिंग पाइपलाइन टेलीग्राम बॉट एपीआई द्वारा प्रदान किए गए मानक मेटाडेटा प्राप्त करता है: आपकी विशिष्ट संख्यात्मक टेलीग्राम यूजर आईडी, नाम, सार्वजनिक उपयोगकर्ता नाम (यदि कॉन्फ़िगर किया गया है), चैट आईडी, और आपके भेजे गए संदेश की पाठ्य सामग्री। इस जानकारी को केवल आपके विशिष्ट टेलीग्राम चैट पर संवादात्मक उत्तर तैयार करने और वापस भेजने के लिए रीयल-टाइम में संसाधित किया जाता है।"
+      }
+    },
+    {
+      "section_number": 2,
+      "title": {
+        "en": "2. Language Preference Storage",
+        "hi": "2. भाषा प्राथमिकता संग्रहण"
+      },
+      "content": {
+        "en": "When you select your preferred language (English or Hindi), this preference is paired with your numerical Telegram User ID in lightweight key-value storage. This allows the bot to remember your language choice for future sessions without prompting you on every command. You can update or change this stored preference at any time using the /language command.",
+        "hi": "जब आप अपनी पसंदीदा भाषा (अंग्रेजी या हिन्दी) चुनते हैं, तो यह प्राथमिकता आपके संख्यात्मक टेलीग्राम यूजर आईडी के साथ हल्के की-वैल्यू स्टोरेज में सहेजी जाती है। इससे बॉट को हर कमांड पर पूछे बिना भविष्य के सत्रों के लिए आपकी भाषा पसंद याद रखने में मदद मिलती है। आप /language कमांड का उपयोग करके किसी भी समय इस सहेजी गई प्राथमिकता को अपडेट या बदल सकते हैं।"
+      }
+    },
+    {
+      "section_number": 3,
+      "title": {
+        "en": "3. AI Processing Through Google Gemini",
+        "hi": "3. गूगल जेमिनी के माध्यम से एआई प्रसंस्करण"
+      },
+      "content": {
+        "en": "To fulfill your conversational queries, the text of your message is securely transmitted over encrypted HTTPS to the Google Gemini API. Google processes this text to generate the artificial intelligence response. In accordance with Google's API service terms for developer applications, Google does not use prompts sent via enterprise/developer APIs to train customer-facing base models without consent. However, transmission is subject to Google's standard developer privacy terms.",
+        "hi": "आपके संवादात्मक प्रश्नों को पूरा करने के लिए, आपके संदेश का टेक्स्ट एन्क्रिप्टेड एचटीटीपीएस (HTTPS) पर गूगल जेमिनी एपीआई को सुरक्षित रूप से प्रसारित किया जाता है। गूगल कृत्रिम बुद्धिमत्ता प्रतिक्रिया उत्पन्न करने के लिए इस टेक्स्ट को संसाधित करता है। डेवलपर अनुप्रयोगों के लिए गूगल की एपीआई सेवा शर्तों के अनुसार, गूगल डेवलपर एपीआई के माध्यम से भेजे गए प्रश्नों का उपयोग ग्राहक-सामना करने वाले बेस मॉडल को प्रशिक्षित करने के लिए सहमति के बिना नहीं करता है। तथापि, ट्रांसमिशन गूगल की मानक डेवलपर गोपनीयता शर्तों के अधीन है।"
+      }
+    },
+    {
+      "section_number": 4,
+      "title": {
+        "en": "4. Cloudflare Worker Processing & Edge Security",
+        "hi": "4. क्लाउडफ्लेयर वर्कर प्रोसेसिंग एवं एज सुरक्षा"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT runs on Cloudflare Workers, an edge computing environment distributed across hundreds of data centers globally. Incoming webhook requests from Telegram are processed in memory in the geographic region nearest to the user. Requests are handled statelessly; once the response is transmitted back to Telegram, active execution memory is released immediately.",
+        "hi": "शिव योगी बॉट क्लाउडफ्लेयर वर्कर्स पर चलता है, जो विश्व स्तर पर सैकड़ों डेटा केंद्रों में वितरित एक एज कंप्यूटिंग वातावरण है। टेलीग्राम से आने वाले वेबहुक अनुरोधों को उपयोगकर्ता के निकटतम भौगोलिक क्षेत्र में मेमोरी में निष्पादित किया जाता है। अनुरोधों को स्टेटलेस (stateless) तरीके से संभाला जाता है; एक बार उत्तर टेलीग्राम को वापस भेज दिए जाने के बाद, सक्रिय निष्पादन मेमोरी तुरंत मुक्त हो जाती है।"
+      }
+    },
+    {
+      "section_number": 5,
+      "title": {
+        "en": "5. GitHub-Hosted Public Information & Sync",
+        "hi": "5. गिटहब-होस्टेड सार्वजनिक जानकारी और सिंक्रनाइज़ेशन"
+      },
+      "content": {
+        "en": "All static configurations, terms and conditions, command directories, and informational texts are fetched dynamically from the public GitHub repository (SHIV-YOGI-BOT). No private user information is ever written to, transmitted to, or exposed on GitHub. The GitHub repository serves strictly as a read-only distribution channel for public bot assets.",
+        "hi": "सभी स्थिर कॉन्फ़िगरेशन, नियम और शर्तें, कमांड निर्देशिकाएं और सूचनात्मक पाठ सार्वजनिक गिटहब रिपॉजिटरी (SHIV-YOGI-BOT) से गतिशील रूप से प्राप्त किए जाते हैं। किसी भी निजी उपयोगकर्ता की जानकारी को कभी भी गिटहब पर लिखा, प्रसारित या उजागर नहीं किया जाता है। गिटहब रिपॉजिटरी केवल सार्वजनिक बॉट संपत्तियों के लिए केवल-पढ़ने योग्य (read-only) वितरण चैनल के रूप में कार्य करती है।"
+      }
+    },
+    {
+      "section_number": 6,
+      "title": {
+        "en": "6. Data Retention Limitations",
+        "hi": "6. डेटा प्रतिधारण सीमाएं"
+      },
+      "content": {
+        "en": "SHIV YOGI BOT does not maintain a commercial behavioral profiling database or sell advertising telemetry. Core message queries are processed ephemerally in RAM during the lifecycle of the webhook execution. Session history retention, if implemented in backend KV storage for conversational multi-turn context, is temporary and subjected to automated expiry cycles.",
+        "hi": "शिव योगी बॉट किसी व्यावसायिक व्यवहार प्रोफाइलिंग डेटाबेस को बनाए नहीं रखता है और न ही विज्ञापन टेलीमेट्री बेचता है। वेबहुक निष्पादन के जीवनचक्र के दौरान मुख्य संदेश प्रश्नों को रैम (RAM) में क्षणिक रूप से संसाधित किया जाता है। संवादात्मक बहु-चरणीय संदर्भ के लिए बैकएंड केवी (KV) स्टोरेज में सत्र इतिहास प्रतिधारण, यदि लागू किया गया है, अस्थायी होता है और स्वचालित समाप्ति चक्रों के अधीन होता है।"
+      }
+    },
+    {
+      "section_number": 7,
+      "title": {
+        "en": "7. API Keys and Backend Security",
+        "hi": "7. एपीआई कुंजियाँ और बैकएंड सुरक्षा"
+      },
+      "content": {
+        "en": "All sensitive credentials, including the Telegram Bot Token and Google Gemini API Key, are managed exclusively as encrypted environment secrets inside the Cloudflare Workers dashboard. No secret tokens or private keys are ever stored in public code repositories, embedded in JSON distribution files, or exposed to end users.",
+        "hi": "टेलीग्राम बॉट टोकन और गूगल जेमिनी एपीआई कुंजी सहित सभी संवेदनशील क्रेडेंशियल्स को क्लाउडफ्लेयर वर्कर्स डैशबोर्ड के भीतर विशेष रूप से एन्क्रिप्टेड पर्यावरण रहस्यों (Environment Secrets) के रूप में प्रबंधित किया जाता है। कोई भी गुप्त टोकन या निजी कुंजी कभी भी सार्वजनिक कोड रिपॉजिटरी में संग्रहीत नहीं की जाती है, JSON फाइलों में एम्बेड नहीं की जाती है, और न ही उपयोगकर्ताओं के सामने उजागर की जाती है।"
+      }
+    },
+    {
+      "section_number": 8,
+      "title": {
+        "en": "8. Third-Party Services Ecosystem",
+        "hi": "8. तृतीय-पक्ष सेवा पारिस्थितिकी तंत्र"
+      },
+      "content": {
+        "en": "Our architecture necessarily interacts with three external platforms: Telegram Messenger (for user identity, chat interface, and message delivery), Cloudflare (for edge computing, SSL termination, and caching), and Google Cloud / Gemini (for AI inference). We encourage users to inspect the individual privacy policies of Telegram, Cloudflare, and Google to understand their independent data handling practices.",
+        "hi": "हमारी वास्तुकला अनिवार्य रूप से तीन बाहरी प्लेटफार्मों के साथ परस्पर क्रिया करती है: टेलीग्राम मैसेंजर (उपयोगकर्ता पहचान, चैट इंटरफ़ेस और संदेश वितरण के लिए), क्लाउडफ्लेयर (एज कंप्यूटिंग, एसएसएल और कैशिंग के लिए), और गूगल क्लाउड / जेमिनी (एआई अनुमान के लिए)। हम उपयोगकर्ताओं को टेलीग्राम, क्लाउडफ्लेयर और गूगल की स्वतंत्र डेटा हैंडलिंग प्रथाओं को समझने के लिए उनकी व्यक्तिगत गोपनीयता नीतियों का निरीक्षण करने के लिए प्रोत्साहित करते हैं।"
+      }
+    },
+    {
+      "section_number": 9,
+      "title": {
+        "en": "9. Critical Warning: Information You Should Never Submit",
+        "hi": "9. महत्वपूर्ण चेतावनी: ऐसी जानकारी जो आपको कभी नहीं भेजनी चाहिए"
+      },
+      "content": {
+        "en": "You should NEVER type or paste sensitive personal data into SHIV YOGI BOT. This includes bank account details, credit/debit card numbers, CVVs, passwords, PINs, Aadhaar numbers, Social Security Numbers, confidential medical diagnoses, or corporate trade secrets. SHIV YOGI BOT is designed for general knowledge and educational inquiries, not for storing protected personal information.",
+        "hi": "आपको शिव योगी बॉट में कभी भी संवेदनशील व्यक्तिगत डेटा टाइप या पेस्ट नहीं करना चाहिए। इसमें बैंक खाता विवरण, क्रेडिट/डेबिट कार्ड नंबर, सीवीवी, पासवर्ड, पिन, आधार नंबर, सामाजिक सुरक्षा नंबर, गोपनीय मेडिकल रिपोर्ट या व्यावसायिक रहस्य शामिल हैं। शिव योगी बॉट सामान्य ज्ञान और शैक्षणिक प्रश्नों के लिए डिज़ाइन किया गया है, न कि संरक्षित व्यक्तिगत जानकारी संग्रहीत करने के लिए।"
+      }
+    },
+    {
+      "section_number": 10,
+      "title": {
+        "en": "10. User Rights and Contact Information",
+        "hi": "10. उपयोगकर्ता अधिकार और संपर्क जानकारी"
+      },
+      "content": {
+        "en": "As a user, you retain the right to stop interacting with SHIV YOGI BOT at any time by stopping or blocking the bot in Telegram. If you wish to request the purging of your stored language preference or have questions regarding this Privacy Policy, you may reach out to creator Shiv Yogi through the bot's /feedback command or via the official GitHub repository issue tracker.",
+        "hi": "एक उपयोगकर्ता के रूप में, आप टेलीग्राम में बॉट को रोककर या ब्लॉक करके किसी भी समय शिव योगी बॉट के साथ बातचीत बंद करने का अधिकार रखते हैं। यदि आप अपनी सहेजी गई भाषा प्राथमिकता को हटाने का अनुरोध करना चाहते हैं या इस गोपनीयता नीति के संबंध में कोई प्रश्न पूछना चाहते हैं, तो आप बॉट के /feedback कमांड के माध्यम से या आधिकारिक गिटहब रिपॉजिटरी इश्यू ट्रैकर के माध्यम से निर्माता शिव योगी से संपर्क कर सकते हैं।"
+      }
+    },
+    {
+      "section_number": 11,
+      "title": {
+        "en": "11. Policy Updates and Revisions",
+        "hi": "11. नीति अपडेट और संशोधन"
+      },
+      "content": {
+        "en": "This Privacy Policy may be updated periodically to reflect architectural upgrades, regulatory requirements, or upstream API adjustments. All revisions will be committed transparently to the GitHub repository and reflected inside the bot via /privacy. Continued usage following any update constitutes acceptance of the revised policy.",
+        "hi": "तकनीकी सुधारों, विनियामक आवश्यकताओं या अपस्ट्रीम एपीआई समायोजनों को प्रतिबिंबित करने के लिए इस गोपनीयता नीति को समय-समय पर अद्यतन किया जा सकता है। सभी संशोधन पारदर्शी रूप से गिटहब रिपॉजिटरी में प्रकाशित किए जाएंगे और /privacy के माध्यम से बॉट में परिलक्षित होंगे। किसी भी अपडेट के बाद निरंतर उपयोग संशोधित नीति की स्वीकृति माना जाएगा।"
+      }
+    }
+  ],
+  "thank_you_section": {
+    "title": {
+      "en": "Heartfelt Appreciation & Dedication",
+      "hi": "हार्दिक आभार एवं समर्पण"
+    },
+    "content": {
+      "en": "Thank you for welcoming SHIV YOGI BOT into your digital journey. Your curiosity, trust, and constructive engagement breathe life into this project. Created with deep passion and dedication by Shiv Yogi, this bot stands as an open testament to the belief that modern artificial intelligence should be simple, respectful, bilingual, and accessible to every seeking mind.",
+      "hi": "अपनी डिजिटल यात्रा में शिव योगी बॉट का स्वागत करने के लिए आपका हृदय से आभार। आपकी जिज्ञासा, विश्वास और रचनात्मक सहभागिता इस परियोजना में प्राण फूंकती है। शिव योगी द्वारा गहन समर्पण और निष्ठा के साथ निर्मित, यह बॉट इस विश्वास का एक खुला प्रमाण है कि आधुनिक कृत्रिम बुद्धिमत्ता को प्रत्येक जिज्ञासु व्यक्ति के लिए सरल, सम्मानजनक, द्विभाषी और सुलभ होना चाहिए।"
+    },
+    "signature": {
+      "creator": "Shiv Yogi",
+      "message": {
+        "en": "Keep learning, keep exploring, and let technology empower your highest aspirations.",
+        "hi": "सीखते रहिए, अन्वेषण करते रहिए, और प्रौद्योगिकी को अपनी सर्वोच्च आकांक्षाओं को सशक्त बनाने दीजिए।"
+      }
+    }
+  }
+}
