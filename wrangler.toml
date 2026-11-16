@@ -10,7 +10,7 @@ FALLBACK_MODEL = "gemini-1.5-flash"
 
 [[kv_namespaces]]
 binding = "BOT_DATA"
-id = "55e587063e784c8192292da4f653c7c1"
+id = "23802bbfdbf84e939bfac2c2d30ad336"
 
 # NOTE: Automated Cron triggers are left commented out per instructions.
 # To activate the scheduled cleanup trigger via Cloudflare, configure in Dashboard or uncomment:
