@@ -1,0 +1,13 @@
+{
+  "name": "shiv-yogi-ai-bot",
+  "version": "5.0.0",
+  "description": "Complete Production-Ready Telegram AI Assistant Bot on Cloudflare Workers powered by Google Gemini",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test tests/security.test.js tests/kv.test.js tests/router.test.js tests/ai-image.test.js tests/admin.test.js tests/worker.test.js",
+    "check": "node scripts/check-syntax.js"
+  },
+  "author": "Shiv Yogi",
+  "license": "MIT"
+}

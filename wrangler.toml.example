@@ -1,0 +1,20 @@
+# Example Wrangler Configuration
+# Copy values from your existing Cloudflare dashboard settings
+
+name = "shiv-yogi-qa-bott"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+[vars]
+OWNER_TELEGRAM_ID = "YOUR_OWNER_TELEGRAM_NUMERIC_ID"
+OWNER_ID = "YOUR_OWNER_TELEGRAM_NUMERIC_ID"
+GEMINI_MODEL = "gemini-2.5-flash"
+FALLBACK_MODEL = "gemini-1.5-flash"
+
+[[kv_namespaces]]
+binding = "BOT_DATA"
+id = "YOUR_EXISTING_KV_NAMESPACE_ID"
+
+# Optional Cron Trigger for scheduled KV cleanup
+# [triggers]
+# crons = ["0 */6 * * *"]
